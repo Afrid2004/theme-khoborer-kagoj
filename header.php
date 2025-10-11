@@ -14,7 +14,7 @@
         <div class="container shadow mb-4 pb-4 pe-4">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-7">
-                    <a href="index.html"><img class="img-fluid" src="images/logo.png" alt="Main Logo"></a>
+                    <a href="index.html"><img class="img-fluid" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Main Logo"></a>
                 </div>
 
 
@@ -35,7 +35,7 @@
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
                             aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
-                                <img class="img-fluid offcanvas-title" id="offcanvasExampleLabel" src="images/logo.png"
+                                <img class="img-fluid offcanvas-title" id="offcanvasExampleLabel" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>"
                                     alt="Main Logo">
 
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
@@ -177,7 +177,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <a href="index.html"><img class="img-fluid" src="images/logo.png" alt="Main Logo"></a>
+                    <a href="index.html"><img class="img-fluid" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Main Logo"></a>
                 </div>
                 <div class="col-md-3 d-flex align-items-end flex-column">
                     <h3><a class="text-danger font-size-20 text-decoration-none d-flex align-items-end" href="category.html">English
@@ -255,7 +255,7 @@
                                 aria-labelledby="offcanvasExamp01leLabel">
                                 <div class="offcanvas-header">
                                     <img class="img-fluid offcanvas-title" id="#offcanvasExample01"
-                                        src="images/logo.png" alt="Main Logo">
+                                        src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Main Logo">
 
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>

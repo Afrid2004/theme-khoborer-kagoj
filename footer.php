@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <div class="logo-footer">
                         <a href="index.html" class="d-flex justify-content-center"><img class="mw-75-percent"
-                                src="images/logo-footer.png" alt="Logo"></a>
+                                src="<?php echo get_template_directory_uri() . '/images/logo-footer.png'; ?>" alt="Logo"></a>
                     </div>
                     <div class="editor-section text-center">
                         <div
@@ -85,7 +85,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="logo-footer">
-                        <a href="index.html"><img src="images/logo-footer.png" alt="Logo"></a>
+                        <a href="index.html"><img src="<?php echo get_template_directory_uri() . '/images/logo-footer.png'; ?>" alt="Logo"></a>
                     </div>
                     <div class="editor-section">
                         <div class="editor d-flex justify-content-start align-items-center mt-md-5 mt-3">

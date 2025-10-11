@@ -15,7 +15,7 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end border-mr-right">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="images/enlish-pic.png" alt="pic"></a>                           
+                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
@@ -33,7 +33,7 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="images/enlish-pic.png" alt="pic"></a>                           
+                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
@@ -51,7 +51,7 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4 border-mr-right">
                     <div class="row border-md-end">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="images/enlish-pic.png" alt="pic"></a>                           
+                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
@@ -69,7 +69,7 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="images/enlish-pic.png" alt="pic"></a>                           
+                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
@@ -96,7 +96,7 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end border-mr-right">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="images/enlish-pic.png" alt="pic"></a>                           
+                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
@@ -114,7 +114,7 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="images/enlish-pic.png" alt="pic"></a>                           
+                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
@@ -132,7 +132,7 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end border-mr-right">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="images/enlish-pic.png" alt="pic"></a>                           
+                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
@@ -150,7 +150,7 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="images/enlish-pic.png" alt="pic"></a>                           
+                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">

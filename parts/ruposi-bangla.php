@@ -44,7 +44,7 @@
 
                                     </div>
                                     <div class="col-md-6 col-12 order-md-2 order-1">
-                                        <a href="single.html"><img class="img-fluid w-100" src="images/cocken.png" alt="pic"></a>
+                                        <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cocken.png'; ?>" alt="pic"></a>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
 
                 <div class="col-12 mt-4 border-bottom mb-4">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/fatiksori.png" alt="college"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="single.html">ফটিকছড়িতে বনের
@@ -204,7 +204,7 @@
                 </div>
                 <div class="col-12 mt-md-3 mt-2">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/fatiksori.png" alt="college"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="single.html">ফটিকছড়িতে বনের
@@ -235,7 +235,7 @@
 
                 <div class="col-12 mt-4 border-bottom mb-4">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/fatiksori.png" alt="college"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="single.html">ফটিকছড়িতে বনের
@@ -248,7 +248,7 @@
                 </div>
                 <div class="col-12 mt-md-3 mt-2">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/fatiksori.png" alt="college"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="single.html">ফটিকছড়িতে বনের

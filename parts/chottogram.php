@@ -10,7 +10,7 @@
             <div class="row border-bottom pb-3">
                 <div class="col-md-3 col-12 col-6 mt-md-4 mt-3 mt-md-4">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/vomra-pic.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/vomra-pic.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ভোমরা দিয়ে
@@ -25,7 +25,7 @@
 
                 <div class="col-md-3 col-12 col-6 mt-md-4 mt-3 heading border-start border-md-end">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/vomra-pic.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/vomra-pic.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ভোমরা দিয়ে
@@ -45,7 +45,7 @@
 
                 <div class="col-md-3 col-12 col-6 mt-md-4 mt-3 heading">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/vomra-pic.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/vomra-pic.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ভোমরা দিয়ে
@@ -60,7 +60,7 @@
 
                 <div class="col-md-3 col-12 col-6 mt-md-4 mt-3 heading border-start">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/vomra-pic.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/vomra-pic.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ভোমরা দিয়ে
@@ -81,7 +81,7 @@
             <div class="row border-bottom pb-3">
                 <div class="col-md-3 col-12 col-6 mt-md-4 mt-3 mt-md-4">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/vomra-pic.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/vomra-pic.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ভোমরা দিয়ে
@@ -96,7 +96,7 @@
 
                 <div class="col-md-3 col-12 col-6 mt-md-4 mt-3 heading border-start border-md-end">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/vomra-pic.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/vomra-pic.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ভোমরা দিয়ে
@@ -116,7 +116,7 @@
 
                 <div class="col-md-3 col-12 col-6 mt-md-4 mt-3 heading">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/vomra-pic.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/vomra-pic.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ভোমরা দিয়ে
@@ -131,7 +131,7 @@
 
                 <div class="col-md-3 col-12 col-6 mt-md-4 mt-3 heading border-start">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="images/vomra-pic.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/vomra-pic.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ভোমরা দিয়ে

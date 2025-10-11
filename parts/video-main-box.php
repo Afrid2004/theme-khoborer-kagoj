@@ -11,7 +11,7 @@
             <div class="col-md-3 mt-md-3 mt-2 special-report-single">
                 <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid rounded-top w-100" src="images/video-img.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="single.html">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
@@ -23,7 +23,7 @@
             <div class="col-md-3 mt-md-3 mt-2 special-report-single">
                 <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid rounded-top w-100" src="images/video-img.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="single.html">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
@@ -35,7 +35,7 @@
             <div class="col-md-3 mt-md-3 mt-2 special-report-single">
                 <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid rounded-top w-100" src="images/video-img.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="single.html">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
@@ -47,7 +47,7 @@
             <div class="col-md-3 mt-md-3 mt-2 special-report-single">
                 <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid rounded-top w-100" src="images/video-img.png" alt="Vomra"></a>
+                        <a href="single.html"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="single.html">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>

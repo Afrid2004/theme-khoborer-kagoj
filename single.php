@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row d-flex justify-content-between align-items-center mb-2">
                 <div class="col-7">
-                    <a href="index.html"><img class="img-fluid w-100" src="images/logo.png" alt="Main Logo"></a>
+                    <a href="index.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Main Logo"></a>
                 </div>
 
 
@@ -57,7 +57,7 @@
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
                             aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
-                                <img class="img-fluid w-100 offcanvas-title" id="offcanvasExampleLabel" src="images/logo.png"
+                                <img class="img-fluid w-100 offcanvas-title" id="offcanvasExampleLabel" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>"
                                     alt="Main Logo">
 
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <a href="index.html"><img class="img-fluid w-100" src="images/logo.png" alt="Main Logo"></a>
+                    <a href="index.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Main Logo"></a>
                 </div>
                 <div class="col-md-3 d-flex align-items-end flex-column">
                     <h3><a class="text-danger font-size-20 text-decoration-none d-flex align-items-end" href="category.html">English
@@ -272,7 +272,7 @@
                                 aria-labelledby="offcanvasExampleLabel">
                                 <div class="offcanvas-header">
                                     <img class="img-fluid w-100 offcanvas-title" id="offcanvasExampleLabel"
-                                        src="images/logo.png" alt="Main Logo">
+                                        src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Main Logo">
 
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>
@@ -446,7 +446,7 @@
                             </div>
                         </div>
                         <div class="news-image mt-md-4 mt-3">
-                            <img class="img-fluid w-100 " src="images/lead-pic.webp" alt="Lead-pic">
+                            <img class="img-fluid w-100 " src="<?php echo get_template_directory_uri() . '/images/lead-pic.webp'; ?>" alt="Lead-pic">
                         </div>
                         <div class="caption border-bottom mb-md-3 mb-2 text-center mt-2"><p>স্বরাষ্ট্র উপদেষ্টা লেফটেন্যান্ট জেনারেল (অব.) মো. জাহাঙ্গীর আলম চৌধুরী</p></div>
                         <div class="news-page-body">
@@ -486,7 +486,7 @@
                 <div class="col-md-3 border-top pt-3 px-0 px-lg-2">
                     <div class="video-box">
                         <div class="image">
-                            <a href="#"><img class="img-fluid w-100 " src="images/video-img.png" alt="pic"></a>
+                            <a href="#"><img class="img-fluid w-100 " src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
                         </div>
                         <div class="head mt-3 mb-3 heading">
                                 <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-20" href="#">১৬ পৃষ্ঠার খবরের কাগজের আজকের আয়োজনে যা আছে</a></h6>
@@ -496,7 +496,7 @@
                                 <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-18" href="#">ভোটে ফিরছে সেনাবাহিনীর শক্তি</a></h6>
                             </div>
                             <div class="col-md-5 image">
-                                <a href="#"><img class="img-fluid w-100 " src="images/video-img.png" alt="pic"></a>
+                                <a href="#"><img class="img-fluid w-100 " src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
                             </div>
                         </div>
                         <div class="row border-bottom mb-3 pt-1 border-top ">
@@ -504,7 +504,7 @@
                                 <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-18" href="#">ভোটে ফিরছে সেনাবাহিনীর শক্তি</a></h6>
                             </div>
                             <div class="col-md-5 image">
-                                <a href="#"><img class="img-fluid w-100" src="images/video-img.png" alt="pic"></a>
+                                <a href="#"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
                             </div>
                         </div>
                         <div class="row">
@@ -512,7 +512,7 @@
                                 <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-18" href="#">ভোটে ফিরছে সেনাবাহিনীর শক্তি</a></h6>
                             </div>
                             <div class="col-md-5 image">
-                                <a href="#"><img class="img-fluid w-100" src="images/video-img.png" alt="pic"></a>
+                                <a href="#"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
                             </div>
                         </div>
                     </div>
@@ -545,7 +545,7 @@
         <div class="row">
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="#"> <img class="img-fluid w-100" src="images/cadet-college.png" alt="college"></a>
+                    <a href="#"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
@@ -554,7 +554,7 @@
             </div>
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="#"> <img class="img-fluid w-100" src="images/cadet-college.png" alt="college"></a>
+                    <a href="#"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
@@ -563,7 +563,7 @@
             </div>
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="#"> <img class="img-fluid w-100" src="images/cadet-college.png" alt="college"></a>
+                    <a href="#"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
@@ -572,7 +572,7 @@
             </div>
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="#"> <img class="img-fluid w-100" src="images/cadet-college.png" alt="college"></a>
+                    <a href="#"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
@@ -598,7 +598,7 @@
             <div class="col-md-3 mt-md-3 mt-2 special-report-single">
                 <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                     <div class="image">
-                        <a href="#"> <img class="img-fluid rounded-top w-100" src="images/video-img.png" alt="Vomra"></a>
+                        <a href="#"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="#">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
@@ -610,7 +610,7 @@
             <div class="col-md-3 mt-md-3 mt-2 special-report-single">
                 <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                     <div class="image">
-                        <a href="#"> <img class="img-fluid rounded-top w-100" src="images/video-img.png" alt="Vomra"></a>
+                        <a href="#"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="#">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
@@ -622,7 +622,7 @@
             <div class="col-md-3 mt-md-3 mt-2 special-report-single">
                 <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                     <div class="image">
-                        <a href="#"> <img class="img-fluid rounded-top w-100" src="images/video-img.png" alt="Vomra"></a>
+                        <a href="#"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="#">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
@@ -634,7 +634,7 @@
             <div class="col-md-3 mt-md-3 mt-2 special-report-single">
                 <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                     <div class="image">
-                        <a href="#"> <img class="img-fluid rounded-top w-100" src="images/video-img.png" alt="Vomra"></a>
+                        <a href="#"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
                     </div>
                     <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="#">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
@@ -660,7 +660,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="logo-footer">
-                        <a href="index.html" class="d-flex justify-content-center"><img class="mw-75-percent" src="images/logo-footer.png" alt="Logo"></a>
+                        <a href="index.html" class="d-flex justify-content-center"><img class="mw-75-percent" src="<?php echo get_template_directory_uri() . '/images/logo-footer.png'; ?>" alt="Logo"></a>
                     </div>
                     <div class="editor-section text-center">
                         <div
@@ -737,7 +737,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="logo-footer">
-                        <a href="index.html"><img src="images/logo-footer.png" alt="Logo"></a>
+                        <a href="index.html"><img src="<?php echo get_template_directory_uri() . '/images/logo-footer.png'; ?>" alt="Logo"></a>
                     </div>
                     <div class="editor-section">
                         <div class="editor d-flex justify-content-start align-items-center mt-md-5 mt-3">

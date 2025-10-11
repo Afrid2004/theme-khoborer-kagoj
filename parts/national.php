@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="col-md-6 order-md-2 order-1 border-md-right">
                                         <div class="image">
-                                            <a href="single.html"><img class="img-fluid w-100" src="images/cocken.png" alt="pic"></a>
+                                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cocken.png'; ?>" alt="pic"></a>
                                         </div>
                                         <!-- <div class="border-md-right-p"></div>                                     -->
 
@@ -44,7 +44,7 @@
                             </div>
                             <div class="col-md-3 mt-3 d-md-block d-none">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid" src="images/july.png" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid" src="<?php echo get_template_directory_uri() . '/images/july.png'; ?>" alt="pic"></a>
 
                                 </div>
                                 <div class="heading">
@@ -64,7 +64,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="image order-last">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/rohinga.png" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/rohinga.png'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="heading order-first">
                                     <h6 class="mb-3 mt-3 lh-base"> <a
@@ -84,7 +84,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/rohinga.png" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/rohinga.png'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="heading">
                                     <h6 class="mb-3 mt-3 lh-base"> <a
@@ -103,7 +103,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/rohinga.png" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/rohinga.png'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="heading">
                                     <h6 class="mb-3 mt-3 lh-base"> <a
@@ -123,7 +123,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/rohinga.png" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/rohinga.png'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="heading">
                                     <h6 class="mb-3 mt-3 lh-base"> <a

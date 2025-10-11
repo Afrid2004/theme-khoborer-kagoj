@@ -14,7 +14,7 @@
                 <div class="col-md-3 mt-md-4 mt-2 special-report-single">
                     <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                         <div class="image">
-                            <a href="single.html"> <img class="img-fluid rounded-top" src="images/university.webp"
+                            <a href="single.html"> <img class="img-fluid rounded-top" src="<?php echo get_template_directory_uri() . '/images/university.webp'; ?>"
                                     alt="Vomra"></a>
                         </div>
                         <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
@@ -35,7 +35,7 @@
                 <div class="col-md-3 mt-md-4 mt-2 special-report-single">
                     <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                         <div class="image">
-                            <a href="single.html"> <img class="img-fluid rounded-top" src="images/university.webp"
+                            <a href="single.html"> <img class="img-fluid rounded-top" src="<?php echo get_template_directory_uri() . '/images/university.webp'; ?>"
                                     alt="Vomra"></a>
                         </div>
                         <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
@@ -56,7 +56,7 @@
                 <div class="col-md-3 mt-md-4 mt-2 special-report-single">
                     <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                         <div class="image">
-                            <a href="single.html"> <img class="img-fluid rounded-top" src="images/university.webp"
+                            <a href="single.html"> <img class="img-fluid rounded-top" src="<?php echo get_template_directory_uri() . '/images/university.webp'; ?>"
                                     alt="Vomra"></a>
                         </div>
                         <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
@@ -77,7 +77,7 @@
                 <div class="col-md-3 mt-md-4 mt-2 special-report-single">
                     <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                         <div class="image">
-                            <a href="single.html"> <img class="img-fluid rounded-top" src="images/university.webp"
+                            <a href="single.html"> <img class="img-fluid rounded-top" src="<?php echo get_template_directory_uri() . '/images/university.webp'; ?>"
                                     alt="Vomra"></a>
                         </div>
                         <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
@@ -98,7 +98,7 @@
                 <div class="col-md-3 mt-md-4 mt-2 special-report-single">
                     <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                         <div class="image">
-                            <a href="single.html"> <img class="img-fluid rounded-top" src="images/university.webp"
+                            <a href="single.html"> <img class="img-fluid rounded-top" src="<?php echo get_template_directory_uri() . '/images/university.webp'; ?>"
                                     alt="Vomra"></a>
                         </div>
                         <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
@@ -119,7 +119,7 @@
                 <div class="col-md-3 mt-md-4 mt-2 special-report-single">
                     <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                         <div class="image">
-                            <a href="single.html"> <img class="img-fluid rounded-top" src="images/university.webp"
+                            <a href="single.html"> <img class="img-fluid rounded-top" src="<?php echo get_template_directory_uri() . '/images/university.webp'; ?>"
                                     alt="Vomra"></a>
                         </div>
                         <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
@@ -140,7 +140,7 @@
                 <div class="col-md-3 mt-md-4 mt-2 special-report-single">
                     <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                         <div class="image">
-                            <a href="single.html"> <img class="img-fluid rounded-top" src="images/university.webp"
+                            <a href="single.html"> <img class="img-fluid rounded-top" src="<?php echo get_template_directory_uri() . '/images/university.webp'; ?>"
                                     alt="Vomra"></a>
                         </div>
                         <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
@@ -161,7 +161,7 @@
                 <div class="col-md-3 mt-md-4 mt-2 special-report-single">
                     <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
                         <div class="image">
-                            <a href="single.html"> <img class="img-fluid rounded-top" src="images/university.webp"
+                            <a href="single.html"> <img class="img-fluid rounded-top" src="<?php echo get_template_directory_uri() . '/images/university.webp'; ?>"
                                     alt="Vomra"></a>
                         </div>
                         <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">

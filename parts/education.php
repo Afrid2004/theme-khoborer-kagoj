@@ -13,7 +13,7 @@
             <!-- .education-single-box start -->
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="images/cadet-college.png" alt="college"></a>
+                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
@@ -28,7 +28,7 @@
             <!-- .education-single-box start -->
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="images/cadet-college.png" alt="college"></a>
+                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
@@ -43,7 +43,7 @@
              <!-- .education-single-box start -->
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="images/cadet-college.png" alt="college"></a>
+                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
@@ -56,7 +56,7 @@
              <!-- .education-single-box start -->
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="images/cadet-college.png" alt="college"></a>
+                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">

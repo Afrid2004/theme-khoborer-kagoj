@@ -10,7 +10,7 @@
                         <div class="col-md-6 col-12 mb-md-4 mb-3 border-lead border-md-right">
 
                             <div class="image">
-                                <a href="single.html"><img class="img-fluid" src="images/lead-pic.webp"
+                                <a href="single.html"><img class="img-fluid" src="<?php echo get_template_directory_uri() . '/images/lead-pic.webp'; ?>"
                                         alt="Lead Pic"></a>
                             </div>
                             <div class="heading">
@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="col-lg-5 mb-2">
                                             <div class="images order-md-2 order-1 mb-2 mb-md-0">
-                                                <a href="#"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                                <a href="#"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@
                                         </div>
                                         <div class="col-lg-5 mb-2">
                                             <div class="images order-md-2 order-1 mb-2 mb-md-0">
-                                                <a href="#"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                                <a href="#"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@
                                         </div>
                                         <div class="col-lg-5 mb-2">
                                             <div class="images order-md-2 order-1 mb-2 mb-md-0">
-                                                <a href="#"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                                <a href="#"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@
                                         </div>
                                         <div class="col-lg-4 order-md-2 order-1 mb-2 mb-md-0">
                                             <div class="image">
-                                                <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                                <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@
                                         </div>
                                         <div class="col-lg-4 order-md-2 order-1 mb-2 mb-md-0">
                                             <div class="image">
-                                                <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg" alt="pic"></a>
+                                                <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -192,7 +192,7 @@
                                     </div>
                                     <div class="col-lg-4 order-md-2 order-1 mb-2 mb-md-0">
                                         <div class="image">
-                                            <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg"
+                                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>"
                                                     alt="pic"></a>
                                         </div>
                                     </div>
@@ -213,7 +213,7 @@
                                     </div>
                                     <div class="col-lg-4 order-md-2 order-1 mb-2 mb-md-0">
                                         <div class="image">
-                                            <a href="single.html"><img class="img-fluid w-100" src="images/Untitled-3-1756103012.jpg"
+                                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>"
                                                     alt="pic"></a>
                                         </div>
                                     </div>
@@ -238,7 +238,7 @@
                     <div class="video-box">
                         <div class="v-box">
                             <div class="image">
-                                <a href="single.html"><img class="img-fluid w-100" src="images/video-img.png" alt="pic"></a>
+                                <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
                             </div>
                             <div class="head mt-3 mb-3 heading border-bottom">
                                 <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">১৬
@@ -251,7 +251,7 @@
                                         ফিরছে সেনাবাহিনীর শক্তি</a></h6>
                             </div>
                             <div class="col-lg-5 image">
-                                <a href="single.html"><img class="img-fluid w-100" src="images/video-img.png" alt="pic"></a>
+                                <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
                             </div>
                         </div>
 
@@ -264,7 +264,7 @@
                                         ফিরছে সেনাবাহিনীর শক্তি</a></h6>
                             </div>
                             <div class="col-lg-5 image">
-                                <a href="single.html"><img class="img-fluid w-100" src="images/video-img.png" alt="pic"></a>
+                                <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
                             </div>
                         </div>
 
@@ -277,7 +277,7 @@
                                         ফিরছে সেনাবাহিনীর শক্তি</a></h6>
                             </div>
                             <div class="col-lg-5 image">
-                                <a href="single.html"><img class="img-fluid w-100" src="images/video-img.png" alt="pic"></a>
+                                <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
                             </div>
                         </div>
 

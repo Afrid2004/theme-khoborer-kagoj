@@ -18,7 +18,7 @@
                         <div class="col-12 mt-md-3 mt-2">
                             <div class="row ">
                                 <div class="col-12">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/science.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="col-12 mt-md-3 mt-2">
                                     <div class="heading">
@@ -81,7 +81,7 @@
                         <div class="col-12 mt-md-3 mt-2">
                             <div class="row ">
                                 <div class="col-12">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/science.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="col-12 mt-md-3 mt-2">
                                     <div class="heading">
@@ -144,7 +144,7 @@
                         <div class="col-12 mt-md-3 mt-2">
                             <div class="row ">
                                 <div class="col-12">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/science.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="col-12 mt-md-3 mt-2">
                                     <div class="heading">
@@ -207,7 +207,7 @@
                         <div class="col-12 mt-md-3 mt-2">
                             <div class="row ">
                                 <div class="col-12">
-                                    <a href="single.html"><img class="img-fluid w-100" src="images/science.jpg" alt="pic"></a>
+                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="col-12 mt-md-3 mt-2">
                                     <div class="heading">
