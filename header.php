@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>খবরের কাগজ । আজকের বাংলা নিউজ পেপার | বাংলা পত্রিকা</title>
+    <?php wp_head(); ?>
+</head>
+
+<body>
+    <!-- header-responsive-part -->
+    <div class="container-fluid d-md-none mt-3 d-flex align-items-center justify-content-between">
+        <div class="container shadow mb-4 pb-4 pe-4">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-7">
+                    <a href="index.html"><img class="img-fluid" src="images/logo.png" alt="Main Logo"></a>
+                </div>
+
+
+                <div class="col-3 d-flex justify-content-end">
+                    <div class="border border-color rounded px-4 py-2">
+                        <p class="mb-0 d-flex justify-content-center"><a
+                                class="text-danger font-size-12 text-decoration-none" href="category.html">English</a></p>
+                    </div>
+                </div>
+
+
+                <div class="col-2 d-flex justify-content-end d-md-none ms-0">
+                    <div class="row d-flex justify-content-end">
+                        <a class="btn btn-dark py-1 px-2" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                            role="button" aria-controls="offcanvasExample"><i
+                                class="bi bi-list font-size-22 text-white "></i></a>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <img class="img-fluid offcanvas-title" id="offcanvasExampleLabel" src="images/logo.png"
+                                    alt="Main Logo">
+
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-header pt-2 pb-2 d-flex justify-content-between font-md shadow">
+                                <a href="https://www.facebook.com/"><i class="bi bi-facebook font-size-22"></i></a>
+                                <a href="https://www.youtube.com/"><i class="bi bi-youtube font-size-22"></i></a>
+                                <a href="https://www.instagram.com/"><i
+                                        class="bi bi-instagram font-size-22"></i></i></a>
+                                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin font-size-22"></i></a>
+                                <a href="https://www.twitter.com/"><i class="bi bi-twitter font-size-22"></i></a>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="container-fluid">
+                                    <ul class="navbar-nav text-bold">
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">প্রচ্ছদ</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">সর্বশেষ</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">জাতীয়</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">রাজনীতি</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">অর্থকড়ি</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">বিশেষ প্রতিবেদন</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">বিশ্বগ্রাম</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">রূপসী বাংলা</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">খেলার ভুবন</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">রঙ</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">সুবর্ণরেখা</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">সাহিত্যসভা</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">কর্মযোগ</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">চট্টগ্রামের খবর</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">ক্যাম্পাস</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">লেখাপড়া</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">যুক্তিতর্ক</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">জ্ঞান-বিজ্ঞান</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">খেত খামার</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">ফ্যাক্টচেক</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">ফ্যাশন প্লাস</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">রঙ্গব্যঙ্গ</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">মমতাময়ী</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">সম্পাদকীয়</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">আইন-আদালত</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">শিল্প-সংস্কৃতি</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">এখানে নোঙর</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">করপোরেট কর্নার</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">ইতিহাস-ঐতিহ্য</a></li>
+                                        <li class="nav-item border-bottom "><a
+                                                class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                aria-current="page" href="category.html">মুক্তিযুদ্ধ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+<!--             
+            <div class="border-mr-bottom mt-4"></div>
+                <div class="border-mr-bottom"></div>
+                <div class="border-mr-bottom"></div> -->
+
+        </div>        
+    </div>
+    <!-- header-responsive-end -->
+
+    <!-- header main part start -->
+    <div class="container-fluid">
+        <div class="container mt-md-3 mt-1 d-none d-md-block">
+            <div class="row">
+                <div class="col-md-3">
+                    <form class="d-flex align-items-center" role="search">
+                        <input class="form-control search-btn-height font-size-13 me-1" type="search"
+                            placeholder="অনুসন্ধান করুন" aria-label="Search" />
+                        <button class="btn" type="submit"><i class="bi fs-6 bi-search"></i></button>
+                    </form>
+                    <div class="date-and-time d-flex justify-content-start font-size-12 align-items-center mt-md-3">
+                        <i class="bi bi-crosshair2"></i>
+                        <h5 class="font-size-12 ps-2 mt-2 pe-2">ঢাকা</h5>
+                        <i class="bi bi-calendar"></i>
+                        <h5 class="font-size-12 ps-2 mt-2">৫ ভাদ্র ১৪৩২, বুধবার, ২০ আগস্ট ২০২৫</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <a href="index.html"><img class="img-fluid" src="images/logo.png" alt="Main Logo"></a>
+                </div>
+                <div class="col-md-3 d-flex align-items-end flex-column">
+                    <h3><a class="text-danger font-size-20 text-decoration-none d-flex align-items-end" href="category.html">English
+                            Edition</a></h3>
+                    <div class="date-and-time d-flex justify-content-start font-size-12 align-items-center mt-md-3 flex-wrap">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="bi bi-archive"></i>
+                            <h5 class="font-size-12 ps-2 mt-2 pe-2"><a class="text-decoration-none text-dark" href="category.html">আর্কাইভ</a></h5>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="bi bi-camera-reels"></i>
+                            <h5 class="font-size-12 ps-2 mt-2 pe-2"><a class="text-decoration-none text-dark" href="category.html">ভিডিও</a></h5>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="bi bi-newspaper"></i>
+                            <h5 class="font-size-12 ps-2 mt-2 pe-2"><a class="text-decoration-none text-dark" href="category.html">ই-পেপার</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-danger mt-md-3 d-none d-md-block">
+        <div class="container px-0">
+            <div class="row">
+                <div class="col-md-11 px-0">
+                    <nav class="navbar navbar-expand-lg py-md-0">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse header-nav" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">প্রচ্ছদ</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">সর্বশেষ</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">জাতীয়</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">রাজনীতি</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">অর্থকড়ি</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">বিশেষ প্রতিবেদন</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">বিশ্বগ্রাম</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">রূপসী বাংলা</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">খেলার ভুবন</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">রঙ</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">সুবর্ণরেখা</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">সাহিত্যসভা</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">ইসলাম</a></li>
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                            aria-current="page" href="category.html">চট্টগ্রামের খবর</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+
+                <div class="col-md-1 pe-0 d-flex align-items-center d-md-block d-none">
+                    <div class="container-fluid px-md-0 px-2">
+                        <div class="container d-flex justify-content-end">
+                            <a class="btn py-0 " data-bs-toggle="offcanvas" href="#offcanvasExample01" role="button"
+                                aria-controls="#offcanvasExample01"><i
+                                    class="bi bi-list font-size-22 text-white "></i></a>
+
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample01"
+                                aria-labelledby="offcanvasExamp01leLabel">
+                                <div class="offcanvas-header">
+                                    <img class="img-fluid offcanvas-title" id="#offcanvasExample01"
+                                        src="images/logo.png" alt="Main Logo">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-header pt-2 pb-2 d-flex justify-content-between font-md shadow">
+                                    <a href="https://www.facebook.com/"><i class="bi bi-facebook font-size-22"></i></a>
+                                    <a href="https://www.youtube.com/"><i class="bi bi-youtube font-size-22"></i></a>
+                                    <a href="https://www.instagram.com/"><i
+                                            class="bi bi-instagram font-size-22"></i></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="bi bi-linkedin font-size-22"></i></a>
+                                    <a href="https://www.twitter.com/"><i class="bi bi-twitter font-size-22"></i></a>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="container-fluid">
+                                        <ul class="navbar-nav text-bold">
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">প্রচ্ছদ</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">সর্বশেষ</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">জাতীয়</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">রাজনীতি</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">অর্থকড়ি</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">বিশেষ প্রতিবেদন</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">বিশ্বগ্রাম</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">রূপসী বাংলা</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">খেলার ভুবন</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">রঙ</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">সুবর্ণরেখা</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">সাহিত্যসভা</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">কর্মযোগ</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">চট্টগ্রামের খবর</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">ক্যাম্পাস</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">লেখাপড়া</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">যুক্তিতর্ক</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">জ্ঞান-বিজ্ঞান</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">খেত খামার</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">ফ্যাক্টচেক</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">ফ্যাশন প্লাস</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">রঙ্গব্যঙ্গ</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">মমতাময়ী</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">সম্পাদকীয়</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">আইন-আদালত</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">শিল্প-সংস্কৃতি</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">এখানে নোঙর</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">করপোরেট কর্নার</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">ইতিহাস-ঐতিহ্য</a></li>
+                                            <li class="nav-item border-bottom "><a
+                                                    class="nav-link text-black font-size-16 py-2 fw-normal"
+                                                    aria-current="page" href="">মুক্তিযুদ্ধ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header main part end -->
