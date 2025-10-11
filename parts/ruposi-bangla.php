@@ -10,14 +10,14 @@
                     <div class="division-box col-md-7 d-flex align-items-lg-center col-lg-8 sub-category text-nowrap overflow-x-scroll mb-0 hover-world d-none d-md-block category ps-lg-0">
                         <nav>
                             <div class="ul d-flex division gap-3 ">
-                                <li class="text-danger"><a class="text-decoration-none text-dark me-3 " href="single.html">ঢাকা</a></li>
-                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="single.html">চট্টগ্রাম</a></li>
-                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="single.html">বরিশাল</a></li>
-                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="single.html">খুলনা</a></li>
-                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="single.html">সিলেট</a></li>
-                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="single.html">রাজশাহী</a></li>
-                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="single.html">রংপুর</a></li>
-                                <li class="text-danger"><a class="text-decoration-none text-dark" href="single.html">ময়মনসিংহ</a></li>
+                                <li class="text-danger"><a class="text-decoration-none text-dark me-3 " href="<?php the_permalink(); ?>">ঢাকা</a></li>
+                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="<?php the_permalink(); ?>">চট্টগ্রাম</a></li>
+                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="<?php the_permalink(); ?>">বরিশাল</a></li>
+                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="<?php the_permalink(); ?>">খুলনা</a></li>
+                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="<?php the_permalink(); ?>">সিলেট</a></li>
+                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="<?php the_permalink(); ?>">রাজশাহী</a></li>
+                                <li class="text-danger"><a class="text-decoration-none text-dark me-3" href="<?php the_permalink(); ?>">রংপুর</a></li>
+                                <li class="text-danger"><a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">ময়মনসিংহ</a></li>
                             </div>
                         </nav>
                     </div>
@@ -35,7 +35,7 @@
                                     <div class="col-md-6 col-12 order-2 order-md-1 mt-2">
                                         <div class="heading">
                                             <h4 class="mb-3 lh-base"><a class="text-decoration-none text-dark font-size-20"
-                                                    href="single.html">শাহজালালে ফয়েলে মোড়ানো ১৩০ কোটি টাকার কোকেন জব্দ</a>
+                                                    href="<?php the_permalink(); ?>">শাহজালালে ফয়েলে মোড়ানো ১৩০ কোটি টাকার কোকেন জব্দ</a>
                                             </h4>
                                         </div>
                                         <div class="time d-none d-md-block">
@@ -44,7 +44,7 @@
 
                                     </div>
                                     <div class="col-md-6 col-12 order-md-2 order-1">
-                                        <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cocken.png'; ?>" alt="pic"></a>
+                                        <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cocken.png'; ?>" alt="pic"></a>
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                         <div class="row border-end">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -68,7 +68,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                         <div class="row border-end">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                         <div class="row border-end">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -106,7 +106,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                         <div class="row border-end">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -125,7 +125,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                         <div class="row border-end">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -145,7 +145,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                         <div class="row border-end">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -164,7 +164,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -191,10 +191,10 @@
 
                 <div class="col-12 mt-4 border-bottom mb-4">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="single.html">ফটিকছড়িতে বনের
+                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="<?php the_permalink(); ?>">ফটিকছড়িতে বনের
                                 জমি দখল নিয়ে বিএনপির ২ গ্রুপে সংঘর্ষ, আহত ৩</a></h6>
                     </div>
                     <div class="time d-none d-md-block">
@@ -204,10 +204,10 @@
                 </div>
                 <div class="col-12 mt-md-3 mt-2">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="single.html">ফটিকছড়িতে বনের
+                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="<?php the_permalink(); ?>">ফটিকছড়িতে বনের
                                 জমি দখল নিয়ে বিএনপির ২ গ্রুপে সংঘর্ষ, আহত ৩</a></h6>
                     </div>
                     <div class="time d-none d-md-block">
@@ -235,10 +235,10 @@
 
                 <div class="col-12 mt-4 border-bottom mb-4">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="single.html">ফটিকছড়িতে বনের
+                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="<?php the_permalink(); ?>">ফটিকছড়িতে বনের
                                 জমি দখল নিয়ে বিএনপির ২ গ্রুপে সংঘর্ষ, আহত ৩</a></h6>
                     </div>
                     <div class="time d-none d-md-block">
@@ -248,10 +248,10 @@
                 </div>
                 <div class="col-12 mt-md-3 mt-2">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="single.html">ফটিকছড়িতে বনের
+                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-18" href="<?php the_permalink(); ?>">ফটিকছড়িতে বনের
                                 জমি দখল নিয়ে বিএনপির ২ গ্রুপে সংঘর্ষ, আহত ৩</a></h6>
                     </div>
                     <div class="time d-none d-md-block">

@@ -11,10 +11,10 @@
         <div class="row">
             <div class="col-md-3 mt-4 border-end">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
+                    <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                 </div>
                 <div class="heading">
-                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ফটিকছড়িতে বনের জমি
+                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">ফটিকছড়িতে বনের জমি
                             দখল নিয়ে বিএনপির ২ গ্রুপে সংঘর্ষ, আহত ৩</a></h6>
                 </div>
                 <div class="news-body d-none d-md-block">
@@ -28,10 +28,10 @@
             </div>
             <div class="col-md-3 mt-4 border-end">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
+                    <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                 </div>
                 <div class="heading">
-                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ফটিকছড়িতে বনের জমি
+                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">ফটিকছড়িতে বনের জমি
                             দখল নিয়ে বিএনপির ২ গ্রুপে সংঘর্ষ, আহত ৩</a></h6>
                 </div>
                 <div class="news-body d-none d-md-block">
@@ -44,10 +44,10 @@
             </div>
             <div class="col-md-3 mt-4 border-end">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
+                    <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                 </div>
                 <div class="heading">
-                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ফটিকছড়িতে বনের জমি
+                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">ফটিকছড়িতে বনের জমি
                             দখল নিয়ে বিএনপির ২ গ্রুপে সংঘর্ষ, আহত ৩</a></h6>
                 </div>
                 <div class="news-body d-none d-md-block">
@@ -60,10 +60,10 @@
             </div>
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
+                    <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/fatiksori.png'; ?>" alt="college"></a>
                 </div>
                 <div class="heading">
-                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ফটিকছড়িতে বনের জমি
+                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">ফটিকছড়িতে বনের জমি
                             দখল নিয়ে বিএনপির ২ গ্রুপে সংঘর্ষ, আহত ৩</a></h6>
                 </div>
                 <div class="news-body d-none d-md-block">

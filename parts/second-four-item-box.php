@@ -18,12 +18,12 @@
                         <div class="col-12 mt-md-3 mt-2">
                             <div class="row ">
                                 <div class="col-12">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="col-12 mt-md-3 mt-2">
                                     <div class="heading">
                                         <h4 class="mb-3 lh-base"><a class="text-decoration-none text-dark font-size-20"
-                                                href="single.html">এই প্রথম চোখে দেখা গেল ‘টাইম ক্রিস্টাল’</a>
+                                                href="<?php the_permalink(); ?>">এই প্রথম চোখে দেখা গেল ‘টাইম ক্রিস্টাল’</a>
                                         </h4>
                                     </div>
                                     <div class="time d-none d-md-block">
@@ -35,7 +35,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -44,7 +44,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -53,7 +53,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -81,12 +81,12 @@
                         <div class="col-12 mt-md-3 mt-2">
                             <div class="row ">
                                 <div class="col-12">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="col-12 mt-md-3 mt-2">
                                     <div class="heading">
                                         <h4 class="mb-3 lh-base"><a class="text-decoration-none text-dark font-size-20"
-                                                href="single.html">এই প্রথম চোখে দেখা গেল ‘টাইম ক্রিস্টাল’</a>
+                                                href="<?php the_permalink(); ?>">এই প্রথম চোখে দেখা গেল ‘টাইম ক্রিস্টাল’</a>
                                         </h4>
                                     </div>
                                     <div class="time d-none d-md-block">
@@ -98,7 +98,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -107,7 +107,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -116,7 +116,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -144,12 +144,12 @@
                         <div class="col-12 mt-md-3 mt-2">
                             <div class="row ">
                                 <div class="col-12">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="col-12 mt-md-3 mt-2">
                                     <div class="heading">
                                         <h4 class="mb-3 lh-base"><a class="text-decoration-none text-dark font-size-20"
-                                                href="single.html">এই প্রথম চোখে দেখা গেল ‘টাইম ক্রিস্টাল’</a>
+                                                href="<?php the_permalink(); ?>">এই প্রথম চোখে দেখা গেল ‘টাইম ক্রিস্টাল’</a>
                                         </h4>
                                     </div>
                                     <div class="time d-none d-md-block">
@@ -161,7 +161,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -170,7 +170,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -179,7 +179,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -207,12 +207,12 @@
                         <div class="col-12 mt-md-3 mt-2">
                             <div class="row ">
                                 <div class="col-12">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/science.jpg'; ?>" alt="pic"></a>
                                 </div>
                                 <div class="col-12 mt-md-3 mt-2">
                                     <div class="heading">
                                         <h4 class="mb-3 lh-base"><a class="text-decoration-none text-dark font-size-20"
-                                                href="single.html">এই প্রথম চোখে দেখা গেল ‘টাইম ক্রিস্টাল’</a>
+                                                href="<?php the_permalink(); ?>">এই প্রথম চোখে দেখা গেল ‘টাইম ক্রিস্টাল’</a>
                                         </h4>
                                     </div>
                                     <div class="time d-none d-md-block">
@@ -224,7 +224,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -233,7 +233,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 
@@ -242,7 +242,7 @@
                             <div class="col-12 mt-md-3 mt-2 border-top">
                                 <div class="heading mt-md-4 mt-3 mb-mt-4 mb-3">
                                     <h4><a class="text-decoration-none text-dark font-size-18"
-                                            href="single.html">বাদ পড়ায় মন ভাঙল দীপিকার</a>
+                                            href="<?php the_permalink(); ?>">বাদ পড়ায় মন ভাঙল দীপিকার</a>
                                     </h4>
                                 </div>
 

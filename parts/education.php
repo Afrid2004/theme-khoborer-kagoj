@@ -13,11 +13,11 @@
             <!-- .education-single-box start -->
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
+                    <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
-                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ক্যাডেট কলেজে ভর্তি
+                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">ক্যাডেট কলেজে ভর্তি
                             পরীক্ষার প্রস্তুতি: বাংলা বিষয়</a></h6>
                 </div>
                 <div class="border-mr-bottom px-4"></div>
@@ -28,11 +28,11 @@
             <!-- .education-single-box start -->
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
+                    <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
-                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ক্যাডেট কলেজে ভর্তি
+                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">ক্যাডেট কলেজে ভর্তি
                             পরীক্ষার প্রস্তুতি: বাংলা বিষয়</a></h6>
                 </div>
                 <div class="border-mr-bottom px-4"></div>
@@ -43,11 +43,11 @@
              <!-- .education-single-box start -->
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
+                    <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
-                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ক্যাডেট কলেজে ভর্তি
+                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">ক্যাডেট কলেজে ভর্তি
                             পরীক্ষার প্রস্তুতি: বাংলা বিষয়</a></h6>
                 </div>
                 <div class="border-mr-bottom px-4"></div>
@@ -56,11 +56,11 @@
              <!-- .education-single-box start -->
             <div class="col-md-3 mt-4">
                 <div class="image">
-                    <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
+                    <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cadet-college.png'; ?>" alt="college"></a>
                 </div>
 
                 <div class="heading">
-                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">ক্যাডেট কলেজে ভর্তি
+                    <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">ক্যাডেট কলেজে ভর্তি
                             পরীক্ষার প্রস্তুতি: বাংলা বিষয়</a></h6>
                 </div>
                 <div class="border-mr-bottom px-4"></div>

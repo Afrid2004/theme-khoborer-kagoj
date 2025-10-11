@@ -15,11 +15,11 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end border-mr-right">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
+                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
-                                <a class="text-decoration-none text-dark" href="single.html">
+                                <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
                                     <p class="font-size-15 mb-0">Light to moderate rain likely in parts of country</p>
                                 </a>                                
                             </div>
@@ -33,11 +33,11 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
+                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
-                                <a class="text-decoration-none text-dark" href="single.html">
+                                <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
                                     <p class="font-size-15 mb-0">Light to moderate rain likely in parts of country</p>
                                 </a>                                
                             </div>
@@ -51,11 +51,11 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4 border-mr-right">
                     <div class="row border-md-end">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
+                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
-                                <a class="text-decoration-none text-dark" href="single.html">
+                                <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
                                     <p class="font-size-15 mb-0">Light to moderate rain likely in parts of country</p>
                                 </a>                                
                             </div>
@@ -69,11 +69,11 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
+                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
-                                <a class="text-decoration-none text-dark" href="single.html">
+                                <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
                                     <p class="font-size-15 mb-0">Light to moderate rain likely in parts of country</p>
                                 </a>                                
                             </div>
@@ -96,11 +96,11 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end border-mr-right">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
+                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
-                                <a class="text-decoration-none text-dark" href="single.html">
+                                <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
                                     <p class="font-size-15 mb-0">Light to moderate rain likely in parts of country</p>
                                 </a>                                
                             </div>
@@ -114,11 +114,11 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
+                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
-                                <a class="text-decoration-none text-dark" href="single.html">
+                                <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
                                     <p class="font-size-15 mb-0">Light to moderate rain likely in parts of country</p>
                                 </a>                                
                             </div>
@@ -132,11 +132,11 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row border-md-end border-mr-right">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
+                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
-                                <a class="text-decoration-none text-dark" href="single.html">
+                                <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
                                     <p class="font-size-15 mb-0">Light to moderate rain likely in parts of country</p>
                                 </a>                                
                             </div>
@@ -150,11 +150,11 @@
                 <div class="col-md-3 col-6 mt-2 mt-md-4">
                     <div class="row">
                         <div class="col-md-4 image ">
-                            <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
+                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/enlish-pic.png'; ?>" alt="pic"></a>                           
                         </div>
                         <div class="col-md-8 ">
                             <div class="heading">
-                                <a class="text-decoration-none text-dark" href="single.html">
+                                <a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">
                                     <p class="font-size-15 mb-0">Light to moderate rain likely in parts of country</p>
                                 </a>                                
                             </div>

@@ -12,10 +12,10 @@
             <div class="row">
                 <div class="col-md-3 mt-4 border-end">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/child.jpg'; ?>" alt="college"></a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/child.jpg'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">শিশুর সামনে যেসব আচরণ এড়িয়ে চলবেন</a></h6>
+                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">শিশুর সামনে যেসব আচরণ এড়িয়ে চলবেন</a></h6>
                     </div>
                     <div class="news-body d-none d-md-block">
                         <p class="lh-base">চট্টগ্রামের ফটিকছড়িতে সরকারি সংরক্ষিত বনের জমি দখলকে কেন্দ্র করে বিএনপির...
@@ -28,10 +28,10 @@
                 </div>
                 <div class="col-md-3 mt-4 border-end">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/child.jpg'; ?>" alt="college"></a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/child.jpg'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">শিশুর সামনে যেসব আচরণ এড়িয়ে চলবেন</a></h6>
+                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">শিশুর সামনে যেসব আচরণ এড়িয়ে চলবেন</a></h6>
                     </div>
                     <div class="news-body d-none d-md-block">
                         <p class="lh-base">চট্টগ্রামের ফটিকছড়িতে সরকারি সংরক্ষিত বনের জমি দখলকে কেন্দ্র করে বিএনপির...
@@ -43,10 +43,10 @@
                 </div>
                 <div class="col-md-3 mt-4 border-end">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/child.jpg'; ?>" alt="college"></a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/child.jpg'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">শিশুর সামনে যেসব আচরণ এড়িয়ে চলবেন</a></h6>
+                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">শিশুর সামনে যেসব আচরণ এড়িয়ে চলবেন</a></h6>
                     </div>
                     <div class="news-body d-none d-md-block">
                         <p class="lh-base">চট্টগ্রামের ফটিকছড়িতে সরকারি সংরক্ষিত বনের জমি দখলকে কেন্দ্র করে বিএনপির...
@@ -58,10 +58,10 @@
                 </div>
                 <div class="col-md-3 mt-4">
                     <div class="image">
-                        <a href="single.html"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/child.jpg'; ?>" alt="college"></a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/child.jpg'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="single.html">শিশুর সামনে যেসব আচরণ এড়িয়ে চলবেন</a></h6>
+                        <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">শিশুর সামনে যেসব আচরণ এড়িয়ে চলবেন</a></h6>
                     </div>
                     <div class="news-body d-none d-md-block">
                         <p class="lh-base">চট্টগ্রামের ফটিকছড়িতে সরকারি সংরক্ষিত বনের জমি দখলকে কেন্দ্র করে বিএনপির...

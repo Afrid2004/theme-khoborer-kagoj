@@ -19,12 +19,12 @@
                             <div class="col-12 pb-md-3 pb-2 ">
                                 <div class="row">
                                     <div class="col-12">
-                                        <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/bangladesh-team.webp'; ?>" alt="pic"></a>
+                                        <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/bangladesh-team.webp'; ?>" alt="pic"></a>
                                     </div>
                                     <div class="col-12 mt-2">
                                         <div class="heading">
                                             <h4 class="mb-3 lh-base"><a class="text-decoration-none text-dark font-size-24"
-                                                    href="single.html">সুপার ফোরে বাংলাদেশের ম্যাচ কখন</a>
+                                                    href="<?php the_permalink(); ?>">সুপার ফোরে বাংলাদেশের ম্যাচ কখন</a>
                                             </h4>
                                         </div>
                                         <div class="news-body">
@@ -50,7 +50,7 @@
                         <div class="row">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -58,7 +58,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                         <div class="row">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -77,7 +77,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                         <div class="row">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                         <div class="row">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -113,7 +113,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@
                         <div class="row">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -139,7 +139,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +150,7 @@
                         <div class="row">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -158,7 +158,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                         <div class="row">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -176,7 +176,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                         <div class="row">
                             <div class="col-lg-7 order-md-1 order-2">
                                 <div class="heading">
-                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="single.html">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                                    <h6 class="mb-md-3 md-2"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
                                 </div>
                                 <div class="time">
                                     <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
@@ -194,7 +194,7 @@
                             </div>
                             <div class="col-lg-5 order-md-2 order-1 mb-2 mb-md-0">
                                 <div class="image">
-                                    <a href="single.html"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
+                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>" alt="pic"></a>
                                 </div>
                             </div>
                         </div>
