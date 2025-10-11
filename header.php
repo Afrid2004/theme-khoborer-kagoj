@@ -207,6 +207,7 @@
                     <nav class="navbar navbar-expand-lg py-md-0">
                         <div class="container-fluid">
                             <div class="collapse navbar-collapse header-nav" id="navbarNav">
+
                                 <ul class="navbar-nav">
                                     <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
                                             aria-current="page" href="category.html">প্রচ্ছদ</a></li>
@@ -237,6 +238,7 @@
                                     <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
                                             aria-current="page" href="category.html">চট্টগ্রামের খবর</a></li>
                                 </ul>
+                                
                             </div>
                         </div>
                     </nav>
