@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php get_header(); 
+/**
+ *Template Name: theme single page
+ */
+?>
 
     <!-- national-part start -->
     <div class="container">

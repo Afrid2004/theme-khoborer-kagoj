@@ -1,5 +1,5 @@
     <!-- lead main box start -->
-    <div class="container-fluid mt-md-5 mt-3 mt-2 mb-md-4 mb-2">
+    <div class="container-fluid mt-md-5 mt-4 mb-md-4 mb-2">
         <div class="container">
             <div class="row">
                 <!-- lead and trading box start -->
@@ -103,29 +103,44 @@
                     <!-- lead-box end -->
 
                     <!-- trading box start -->
-                    <div class="row trending-box d-flex justify-content-between py-2 mt-3 gap-2 gap-lg-0">
-                        <div class="col-12 ">
-                            <div class="row d-flex align-items-center px-md-3 px-0">
-                                <div class="border-top pe-3 mb-md-3 mb-3"></div>
-                                <div class="col-3 mt-2">
-                                    <button type="button" class="btn btn-danger px-md-5">
-                                        <i class="fa-solid fa-arrow-trend-up pe-md-3 pe-2"></i> ট্রেন্ডিং
-                                    </button>
-                                </div>
+                    <div class="row trending-box py-2 border-bottom border-top mt-2 gap-2 gap-lg-0">
+                        <div class="col-12 col-lg-3">
+                            <button type="button" class="btn btn-danger px-md-5">
+                                <i class="fa-solid fa-arrow-trend-up pe-md-3 pe-2"></i> ট্রেন্ডিং
+                            </button>
+                        </div>
 
-                                <div class="col-9 trending-text mt-2 gap-2 text-nowrap ps-lg-0">
-                                    <ul class="d-flex justify-content-md-between justify-content-start flex-wrap list-unstyled mb-md-0">
-                                        <li class="me-md-4 me-3"><a class="btn btn-secondary text-decoration-none text-black font-size-16 text-white text-bold" href="category.html">ছাত্রসংসদ নির্বাচন</a></li>
-                                        <li class="me-md-4 me-3"><a class="btn btn-secondary text-decoration-none text-black font-size-16 text-white text-bold" href="category.html">জুলাই সনদ</a></li>
-                                        <li class="me-md-4 me-3 "><a class="btn btn-secondary text-decoration-none text-black font-size-16 text-white text-bold" href="category.html">সাদা পাথর</a></li>
-                                        <li class="me-md-4 me-3 mt-md-0 mt-3"><a class="btn btn-secondary text-decoration-none text-black font-size-16 text-white text-bold" href="category.html">দুর্ণীতির খবর</a></li>
-                                        <li class="me-md-4 me-3  mt-md-0 mt-3"><a class="btn btn-secondary text-decoration-none text-black font-size-16 text-white text-bold" href="category.html">স্বর্ণের বাজার</a></li>
-                                    </ul>
+                        <div class="col-lg-9 col-12 overflow-hidden">
+                            <div class="all-category d-flex gap-2 text-nowrap overflow-x-scroll category ps-lg-0">
+                                <div class="tranding-heading py-2 mb-2 px-3 rounded heading ">
+                                    <h6 class="mb-0 tag-btn text-end d-flex">
+                                        <a class="text-decoration-none text-black font-size-20" href="category.html">ছাত্রসংসদ নির্বাচন</a>
+                                    </h6>
                                 </div>
-                                <div class="border-top pe-3 mt-md-3 mt-3"></div>
+                                <div class="tranding-heading py-2 mb-2 px-3 rounded heading">
+                                    <h6 class="mb-0 tag-btn text-end d-flex">
+                                        <a class="text-decoration-none text-black font-size-20" href="category.html">জুলাই সনদ</a>
+                                    </h6>
+                                </div>
+                                <div class="tranding-heading py-2 mb-2 px-3 rounded heading">
+                                    <h6 class="mb-0 tag-btn text-end">
+                                        <a class="text-decoration-none text-black d-flex font-size-20" href="category.html">সাদা পাথর</a>
+                                    </h6>
+                                </div>
+                                <div class="tranding-heading py-2 mb-2 px-3 rounded heading">
+                                    <h6 class="mb-0 tag-btn text-end d-flex">
+                                        <a class="text-decoration-none text-black font-size-20" href="category.html">দুর্ণীতির খবর</a>
+                                    </h6>
+                                </div>
+                                <div class="tranding-heading py-2 mb-2 px-3 rounded heading">
+                                    <h6 class="mb-0 tag-btn text-end d-flex">
+                                        <a class="text-decoration-none text-black font-size-20" href="category.html">স্বর্ণের বাজার</a>
+                                    </h6>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="trending-box py-md-3 py-2 mt-2 mt-md-3">
                         <div class="d-none d-md-block pb-4">
                             <div class="row">

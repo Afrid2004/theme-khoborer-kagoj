@@ -10,8 +10,8 @@
 
 <body>
     <!-- header-responsive-part -->
-    <div class="container-fluid d-md-none mt-3 d-flex align-items-center justify-content-between">
-        <div class="container shadow mb-4 pb-4 pe-4">
+    <div class="container-fluid bg-white px-0 d-md-none d-flex align-items-center justify-content-between position-sticky" style="top:0;">
+        <div class="container shadow py-3 pe-4">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-7">
                     <a href="<?php echo esc_url(home_url()) ?>"><img class="img-fluid" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="Main Logo"></a>
@@ -49,8 +49,11 @@
                                 <a href="https://www.linkedin.com/"><i class="bi bi-linkedin font-size-22"></i></a>
                                 <a href="https://www.twitter.com/"><i class="bi bi-twitter font-size-22"></i></a>
                             </div>
-                            <div class="offcanvas-body">
-                                <div class="container-fluid">
+                            <div class="offcanvas-body px-0">
+                                <div class="container-fluid px-0">
+                                
+                                <?php function primary_responsive_menu_fallback(){ ?>
+
                                     <ul class="navbar-nav text-bold">
                                         <li class="nav-item border-bottom "><a
                                                 class="nav-link text-black font-size-16 py-2 fw-normal"
@@ -143,6 +146,19 @@
                                                 class="nav-link text-black font-size-16 py-2 fw-normal"
                                                 aria-current="page" href="category.html">মুক্তিযুদ্ধ</a></li>
                                     </ul>
+
+                                <?php } 
+                                
+                                    wp_nav_menu(array(
+                                        'theme_location' => 'primary-menu',
+                                        'menu_class'     => 'navbar-nav text-bold responsive-menu',
+                                        'container'      => 'false',
+                                        'depth'          => 0,
+                                        'fallback_cb'    => 'primary_responsive_menu_fallback',
+                                        'walker'         => new WP_Bootstrap_navwalker(),
+                                    ))
+
+                                ?>
                                 </div>
                             </div>
                         </div>
@@ -200,45 +216,62 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-danger mt-md-3 d-none d-md-block">
+    <div class="container-fluid bg-danger mt-md-3 d-none d-md-block position-sticky" style="top: 0rem;">
         <div class="container px-0">
             <div class="row">
-                <div class="col-md-11 px-0">
+                <div class="col-md-11 px-0 d-flex align-items-center">
                     <nav class="navbar navbar-expand-lg py-md-0">
                         <div class="container-fluid">
                             <div class="collapse navbar-collapse header-nav" id="navbarNav">
 
-                                <ul class="navbar-nav">
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                            <?php function primary_menu_fallback() { ?>
+
+                                <ul class="navbar-nav align-items-center">
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">প্রচ্ছদ</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">সর্বশেষ</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">জাতীয়</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">রাজনীতি</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">অর্থকড়ি</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">বিশেষ প্রতিবেদন</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">বিশ্বগ্রাম</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">রূপসী বাংলা</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">খেলার ভুবন</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">রঙ</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">সুবর্ণরেখা</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">সাহিত্যসভা</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">ইসলাম</a></li>
-                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal"
+                                    <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">চট্টগ্রামের খবর</a></li>
                                 </ul>
-                                
+                        
+                            <?php } 
+                            
+                                wp_nav_menu(array(
+                                        
+                                        'theme_location' => 'primary-menu',
+                                        'menu_class'     => 'navbar-nav align-items-center',
+                                        'container'      => 'false',
+                                        'depth'          => 0,
+                                        'fallback_cb'    => 'primary_menu_fallback',
+                                        'walker'         => new WP_Bootstrap_navwalker(),
+
+                                ));
+
+                            ?>
+
                             </div>
                         </div>
                     </nav>
