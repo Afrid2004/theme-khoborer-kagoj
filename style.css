@@ -11,5 +11,5 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: khoborer-kagoj
-Tags: news, magazine, blog, newspaper, online-news, editor-style, custom-logo, custom-menu, featured-images, full-width-template, translation-ready, rtl-language-support, sticky-post, threaded-comments, block-patterns, wide-blocks, custom-colors, responsive-layout, accessibility-ready
+Tags: news, magazine, blog, newspaper, online-news, editor-style, custom-logo, custom-menu, featured-<?php get_template_directory_uri() . ', full-width-template, translation-ready, rtl-language-support, sticky-post, threaded-comments, block-patterns, wide-blocks, custom-colors, responsive-layout, accessibility-ready
 */

@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-md-3 mt-4 border-end">
                     <div class="image">
-                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid" src="<?php echo get_template_directory_uri() . '/images/Untitled-15-1758258093.gif'; ?>" alt="college"> </a>
+                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid" src="<?php echo get_template_directory_uri() . '/images/Untitled-15-1758258093.gif'; ?>" alt="college"></a>
                     </div>
                     <div class="heading">
                         <h6 class="mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20" href="<?php the_permalink(); ?>">অতৃপ্ত বাসনা</a></h6>

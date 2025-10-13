@@ -1,4 +1,4 @@
-<!-- karmojog-juktitarko-part start -->
+ <!-- karmojog-juktitarko-part start -->
     <div class="container border-bottom pb-md-4 pb-3 border-bottom">
         <div class="row">
             <!-- karmojog-part lead start -->
@@ -142,4 +142,4 @@
             
         </div>
     </div>    
-    <!-- karmojog-juktitarko-part end --> 
+    <!-- karmojog-juktitarko-part end -->  

@@ -218,15 +218,15 @@
     </div>
     <div class="container-fluid bg-danger mt-md-3 d-none d-md-block position-sticky" style="top: 0rem;">
         <div class="container px-0">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-11 px-0 d-flex align-items-center">
-                    <nav class="navbar navbar-expand-lg py-md-0">
+                    <nav class="navbar navbar-expand-md py-md-0">
                         <div class="container-fluid">
                             <div class="collapse navbar-collapse header-nav" id="navbarNav">
 
                             <?php function primary_menu_fallback() { ?>
 
-                                <ul class="navbar-nav align-items-center">
+                                <ul class="navbar-nav align-items-center flex-wrap">
                                     <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
                                             aria-current="page" href="category.html">প্রচ্ছদ</a></li>
                                     <li class="nav-item "><a class="nav-link text-white font-size-16 fw-normal custom-link"
@@ -262,7 +262,7 @@
                                 wp_nav_menu(array(
                                         
                                         'theme_location' => 'primary-menu',
-                                        'menu_class'     => 'navbar-nav align-items-center',
+                                        'menu_class'     => 'navbar-nav align-items-center flex-wrap',
                                         'container'      => 'false',
                                         'depth'          => 0,
                                         'fallback_cb'    => 'primary_menu_fallback',

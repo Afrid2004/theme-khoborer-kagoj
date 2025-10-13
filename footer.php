@@ -1,10 +1,10 @@
-    <!-- footer part start -->
+ <!-- footer part start -->
     <div class="container-fluid footer-bg-color mt-md-5 py-md-5 d-md-none">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="logo-footer">
-                        <a href="<?php echo esc_url(home_url()) ?>" class="d-flex justify-content-center"><img class="mw-75-percent"
+                        <a href="<?php echo esc_url(home_url()); ?>" class="d-flex justify-content-center"><img class="mw-75-percent"
                                 src="<?php echo get_template_directory_uri() . '/images/logo-footer.png'; ?>" alt="Logo"></a>
                     </div>
                     <div class="editor-section text-center">
@@ -85,7 +85,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="logo-footer">
-                        <a href="<?php echo esc_url(home_url()) ?>"><img src="<?php echo get_template_directory_uri() . '/images/logo-footer.png'; ?>" alt="Logo"></a>
+                        <a href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo get_template_directory_uri() . '/images/logo-footer.png'; ?>" alt="Logo"></a>
                     </div>
                     <div class="editor-section">
                         <div class="editor d-flex justify-content-start align-items-center mt-md-5 mt-3">

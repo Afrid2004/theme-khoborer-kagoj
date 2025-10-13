@@ -1,6 +1,6 @@
-    <!-- politics-part start -->
+ <!-- politics-part start -->
     <div class="container">
-        <div class="row d-flex align-items-center border-bottom pb-3 mt-md-4 mt-3">
+        <div class="row d-flex align-items-center border-bottom pb-3 mt-4">
             <div class="col-md-6 col-6">
                 <a class="text-decoration-none text-dark font-size-20 text-bold" href="category.html">রাজনীতি</a>
             </div>
