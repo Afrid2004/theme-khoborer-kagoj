@@ -198,6 +198,12 @@ nav ul.navbar-nav>li.nav-item>.nav-link.custom-link:hover {
     padding-inline: .7rem;
 }
 
+.extra>.menu-item>.nav-link {
+    color: black !important;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.612) !important;
+    padding-inline: .7rem;
+}
+
 .responsive-menu .menu-item .dropdown-item {
     border-bottom: none !important;
     background: rgb(249, 249, 249) !important;

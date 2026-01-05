@@ -2,8 +2,9 @@
 
   function khoborer_kagoj_theme_register_navbar(){
     register_nav_menus(array(
-      'primary-menu' => __('Primary Menu', 'khoborer-kagoj'),
-      'footer-menu' => __('Footer Menu', 'khoborer-kagoj'),
+      'primary-menu'            => __('Primary Menu', 'khoborer-kagoj'),
+      'primary-extra-menu'      => __('Primary Extra Menu', 'khoborer-kagoj'),
+      'footer-menu'             => __('Footer Menu', 'khoborer-kagoj'),
     ));
   }
 
