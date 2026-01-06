@@ -24,3 +24,4 @@ if (file_exists(get_template_directory() . '/includes/helpers/class-wp-bootstrap
 if (file_exists(get_template_directory() . '/includes/helpers/date-and-time.php')) {
   require_once('includes/helpers/date-and-time.php');
 }
+

@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>খবরের কাগজ । আজকের বাংলা নিউজ পেপার | বাংলা পত্রিকা</title>
   <?php wp_head(); ?>
@@ -200,9 +200,11 @@
                   "/images/logo.png"; ?>" alt="Main Logo"></a>
         </div>
         <div class="col-md-3 d-flex align-items-end flex-column">
-          <h3><a class="text-danger font-size-20 text-decoration-none d-flex align-items-end"
-              href="category.html">English
-              Edition</a></h3>
+          <h3>
+            <a class="text-danger font-size-20 text-decoration-none d-flex align-items-end"
+              href="category.html">English</a>
+          </h3>
+
           <div class="date-and-time d-flex justify-content-start font-size-12 align-items-center mt-md-3 flex-wrap">
             <div class="d-flex align-items-center justify-content-center">
               <i class="bi bi-archive"></i>
