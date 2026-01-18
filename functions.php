@@ -25,3 +25,28 @@ if (file_exists(get_template_directory() . '/includes/helpers/date-and-time.php'
   require_once('includes/helpers/date-and-time.php');
 }
 
+//bangla date file include 
+if (file_exists(get_template_directory() . '/includes/helpers/bangla-date.php')) {
+  require_once('includes/helpers/bangla-date.php');
+}
+
+//post publish time with category 
+if (file_exists(get_template_directory() . '/includes/helpers/post-publish-time-with-category.php')) {
+  require_once('includes/helpers/post-publish-time-with-category.php');
+}
+
+
+// all-categories
+if (file_exists(get_template_directory() . '/includes/customizer/all-categories.php')) {
+  include_once('includes/customizer/all-categories.php');
+}
+
+//for creating auto pages
+if (file_exists(get_template_directory() . '/includes/helpers/after-switch-theme.php')) {
+  require_once('includes/helpers/after-switch-theme.php');
+}
+
+// after setup theme
+if (file_exists(get_template_directory() . '/includes/helpers/after-setup-theme.php')) {
+  include_once('includes/helpers/after-setup-theme.php');
+}

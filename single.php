@@ -32,8 +32,8 @@ get_header();
           <?php if (have_posts()):while (have_posts()):the_post();?>
 
           <div class="heading">
-            <h1><a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>">সুষ্ঠু নির্বাচন করতে সবার
-                সহযোগিতা প্রয়োজন: স্বরাষ্ট্র উপদেষ্টা</a></h1>
+            <h1><a class="text-decoration-none text-dark"
+                href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></h1>
           </div>
           <div class="timelinebox-socialmedia">
             <div class="row">
@@ -45,7 +45,8 @@ get_header();
                   </div>
                   <div class="timeline-box d-flex justify-content-start align-items-center">
                     <i class="bi bi-calendar"></i>
-                    <h5 class="font-size-16 ps-2 mt-2">৫ ভাদ্র ১৪৩২, বুধবার, ২০ আগস্ট ২০২৫</h5>
+                    <h5 class="font-size-16 ps-2 mt-2">প্রকাশিত : <?php echo bangla_publish_date(get_the_time('U')); ?>
+                    </h5>
                   </div>
                 </div>
 
@@ -65,29 +66,23 @@ get_header();
             </div>
           </div>
           <div class="news-image mt-md-4 mt-3">
-            <img class="img-fluid w-100 " src="<?php echo get_template_directory_uri() .
-                                    "/images/lead-pic.webp"; ?>" alt="Lead-pic">
+            <?php
+              $thumb_id = get_post_thumbnail_id(get_the_ID());
+              $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+              if (has_post_thumbnail()) {
+                      the_post_thumbnail('banner-image-size-856x460', array(
+                            'class' => 'img-fluid w-100',
+                            'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
+              ));} else { ?>
+            <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
+              alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>">
+            <?php } ?>
           </div>
           <div class="caption border-bottom mb-md-3 mb-2 text-center mt-2">
-            <p>স্বরাষ্ট্র উপদেষ্টা লেফটেন্যান্ট জেনারেল (অব.) মো. জাহাঙ্গীর আলম চৌধুরী</p>
+            <p><?php echo the_title(); ?></p>
           </div>
-          <div class="news-page-body">
-            <p class="font-size-18">সুষ্ঠু নির্বাচন শুধু আইনশৃঙ্খলা রক্ষাকারী বাহিনীর ওপর নির্ভর করে না, এ জন্য জনগণ,
-              রাজনৈতিক দল, নির্বাচন কমিশনসহ সব স্টেকহোল্ডারদের সহযোগিতা প্রয়োজন বলে জানিয়েছেন স্বরাষ্ট্র উপদেষ্টা
-              লেফটেন্যান্ট জেনারেল (অব.) মো. জাহাঙ্গীর আলম চৌধুরী। <br><br>
-
-              রবিবার (৭ সেপ্টেম্বর) রাজধানীর রাজারবাগে পুলিশ সদস্যদের নির্বাচন বিষয়ক প্রশিক্ষণ উদ্বোধনের সময় এ কথা বলেন
-              তিনি। <br><br>
-
-              পুলিশকে ২০১৪, ১৮ ও ২৪ সালের নির্বাচন প্রক্রিয়া ভুলে যেতে হবে মন্তব্য করে স্বরাষ্ট্র উপদেষ্টা বলেন, আশা করব
-              নির্বাচন শান্তি ও উৎসবমুখর হবে। অতীতের বাজে নির্বাচনগুলোর কথা মাথা থেকে ফেলে দিতে হবে। <br><br>
-
-              রাজনৈতিক দলের কাছ থেকে পুলিশকে দূরে থাকার পরামর্শ দিয়ে স্বরাষ্ট্র উপদেষ্টা বলেন, ধৈর্য্যের সঙ্গে মাথা
-              ঠাণ্ডা রেখে আইনি প্রক্রিয়ায় সকল বিষয় মোকাবিলা করতে হবে। আমরা কাজ কর্মে যত স্বচ্ছ থাকবো সাধারণ জনগণের কাছে
-              তত আস্থা অর্জন করতে পারব। <br><br>
-
-              যত বাধাই আসুক না কেন, নির্বাচনের আগে লটারির মাধ্যমে কর্মকর্তাদের পোস্টিং করা হবে বলেও জানান মো. জাহাঙ্গীর
-              আলম চৌধুরী।</p>
+          <div class="news-page-body font-size-18">
+            <p class="font-size-18"><?php echo the_content(); ?></p>
           </div>
           <!-- social-media start -->
           <div class="col-md-6 col-12 mt-md-4 mt-3">
