@@ -385,7 +385,12 @@ li.text-danger:nth-child(1) {
 .hover-world a {
     transition: all 0.5s;
 }
-
+.category-menu{
+    transition: all .5s ease-in-out;
+}
+.category-menu:hover{
+    color: red !important;
+}
 .border-for-this-section {
     border-right: 1px solid #999999;
 }

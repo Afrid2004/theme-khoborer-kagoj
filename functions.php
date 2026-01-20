@@ -50,3 +50,28 @@ if (file_exists(get_template_directory() . '/includes/helpers/after-switch-theme
 if (file_exists(get_template_directory() . '/includes/helpers/after-setup-theme.php')) {
   include_once('includes/helpers/after-setup-theme.php');
 }
+
+/* ===== Post View Count ===== */
+function set_post_views($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if ($count == '') {
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    } else {
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+
+function get_post_views($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if ($count == '') {
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 বার পড়া হয়েছে";
+    }
+    return $count . " বার পড়া হয়েছে";
+}

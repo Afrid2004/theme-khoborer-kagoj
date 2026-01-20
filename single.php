@@ -31,6 +31,8 @@ get_header();
 
           <?php if (have_posts()):while (have_posts()):the_post();?>
 
+
+
           <div class="heading">
             <h1><a class="text-decoration-none text-dark"
                 href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></h1>

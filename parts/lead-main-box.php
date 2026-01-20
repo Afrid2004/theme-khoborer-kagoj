@@ -160,7 +160,7 @@
 
           <div class="col-lg-9 col-12 overflow-hidden">
             <?php function category_menu_fallback() {?>
-            <ul class="all-category d-flex gap-2 text-nowrap overflow-x-scroll category ps-lg-0">
+            <ul class="all-category d-flex gap-2 text-nowrap overflow-x-scroll category ps-lg-0 d-flex">
               <li class="tranding-heading py-1 mb-2 px-3 rounded heading list-unstyled">
                 <h6 class="mb-0 tag-btn text-end">
                   <a class="text-decoration-none text-black font-size-20" href="category.html">ছাত্রসংসদ নির্বাচন</a>
@@ -190,7 +190,7 @@
             <?php }
                 wp_nav_menu(array(
                   'theme_location'    => 'category-menu',
-                  'class'             => 'all-category d-flex gap-2 text-nowrap overflow-x-scroll category ps-lg-0',
+                  'menu_class'        => 'all-category d-flex gap-2 text-nowrap overflow-x-scroll category ps-lg-0',
                   'depth'             => 0,
                   'container'         => false,
                   'fallback_cb'       => 'category_menu_fallback'
@@ -204,13 +204,6 @@
         <div class="trending-box py-md-3 py-2 mt-2 mt-md-3">
           <div class="border-bottom d-none d-md-block pb-4">
             <div class="row">
-              <?php $trending_posts = new WP_Query(array( 
-                'posts_per_page' => 2, // কতগুলো trending postদেখাবে 
-                'meta_key' => 'post_views_count', // post view counter meta 
-                'orderby' => 'meta_value_num', 
-                'order' => 'DESC' 
-              )); 
-              while($trending_posts->have_posts()):$trending_posts->the_post(); ?>
               <div class="col-md-6 col-6 pb-2">
                 <div class="row border-end">
                   <div class="col-lg-8 order-md-1 order-2">
@@ -231,7 +224,27 @@
                   </div>
                 </div>
               </div>
-              <?php endwhile; wp_reset_postdata(); ?>
+
+              <div class="col-md-6 col-6 pb-2">
+                <div class="row border-end">
+                  <div class="col-lg-8 order-md-1 order-2">
+                    <div class="heading">
+                      <h6 class="mb-md-3 md-2 "><a class=" font-size-22 text-decoration-none text-dark"
+                          href="<?php the_permalink(); ?>">চট্টগ্রামে সৈকতে আগুন</a></h6>
+                    </div>
+                    <div class="time">
+                      <p class="font-size-11 mb-0">রূপসী বাংলা | ২৩ মিনিট আগে</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 order-md-2 order-1 mb-2 mb-md-0">
+                    <div class="image">
+                      <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100"
+                          src="<?php echo get_template_directory_uri() . '/images/Untitled-3-1756103012.jpg'; ?>"
+                          alt="pic"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -300,46 +313,125 @@
       </div>
       <div class="col-md-3 mt-3 mt-lg-0">
         <div class="video-box">
-          <div class="image">
-            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100"
-                src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
-          </div>
-          <div class="head mt-3 mb-3 heading">
-            <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-20"
-                href="<?php the_permalink(); ?>">১৬
-                পৃষ্ঠার খবরের কাগজের আজকের আয়োজনে যা আছে</a></h6>
-          </div>
           <div class="row">
-            <div class="col-lg-7 heading">
-              <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-18"
-                  href="<?php the_permalink(); ?>">ভোটে
-                  ফিরছে সেনাবাহিনীর শক্তি</a></h6>
+            <?php
+              $video_id = 2;
+              $categoryvideo_id = intval(get_theme_mod("rjs_category_dropdown_{$video_id}"));
+
+              if (empty($categoryvideo_id)) {
+                  $categoryvideo_id = 2;
+              }
+
+              $videocategory_name = get_cat_name($categoryvideo_id);
+              $videocategory_link = get_category_link($categoryvideo_id);
+
+              $videoargs = array(
+                  'posts_per_page'      => 1,
+                  'cat'                 => $categoryvideo_id,
+                  'orderby'             => 'date',
+                  'order'               => 'DESC',
+                  'ignore_sticky_posts' => 1, // ⭐ VERY IMPORTANT
+              );
+
+              $catBreaking = new WP_Query($videoargs);
+
+              while ($catBreaking->have_posts()) : $catBreaking->the_post();
+            ?>
+            <!-- category No. On Off start -->
+            <?php
+                if (is_user_logged_in()) {
+                $videocategoryOnOff = get_theme_mod('npa_category_switcher_id');
+                if ('0' != $videocategoryOnOff) {
+                    echo '<span class="text-danger"> ' . esc_html($video_id) . ' </span>';
+                }
+                }
+                ?>
+            <!-- category No. On Off end -->
+            <div class="col-12">
+              <div class="row">
+                <div class="image col-12">
+                  <a href="<?php the_permalink(); ?>"><?php
+                                    $thumb_id = get_post_thumbnail_id(get_the_ID());
+                                    $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+                                    if (has_post_thumbnail()) {
+                                        the_post_thumbnail('news-and-event-image-420x250', array(
+                                        'class' => 'img-fluid w-100',
+                                        'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
+                                        ));
+                                    } else { ?>
+                    <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
+                      alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
+                      class="img-fluid w-100">
+                    <?php } 
+                                ?></a>
+                </div>
+                <div class="head mt-3 mb-3 heading  col-12">
+                  <div class="border-bottom">
+                    <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-20"
+                        href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-5 image">
-              <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100"
-                  src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
-            </div>
+
+            <?php
+              endwhile;
+              wp_reset_postdata();
+          ?>
           </div>
+
           <div class="row">
-            <div class="col-lg-7 heading">
-              <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-18"
-                  href="<?php the_permalink(); ?>">ভোটে
-                  ফিরছে সেনাবাহিনীর শক্তি</a></h6>
-            </div>
-            <div class="col-lg-5 image">
-              <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100"
-                  src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-7 heading">
-              <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-18"
-                  href="<?php the_permalink(); ?>">ভোটে
-                  ফিরছে সেনাবাহিনীর শক্তি</a></h6>
-            </div>
-            <div class="col-lg-5 image">
-              <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100"
-                  src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="pic"></a>
+            <div class="col-12">
+              <?php
+                $video_id = 2;
+                $categoryvideo_id = intval(get_theme_mod("rjs_category_dropdown_{$video_id}"));
+
+                if (empty($categoryvideo_id)) {
+                    $categoryvideo_id = 2;
+                }
+
+                $videocategory_name = get_cat_name($categoryvideo_id);
+                $videocategory_link = get_category_link($categoryvideo_id);
+
+                $videoargs = array(
+                    'posts_per_page'      => 3,
+                    
+                    'cat'                 => $categoryvideo_id,
+                    'orderby'             => 'date',
+                    'order'               => 'DESC',
+                    'ignore_sticky_posts' => 1, // ⭐ VERY IMPORTANT
+                );
+
+                $catBreaking = new WP_Query($videoargs);
+
+                while ($catBreaking->have_posts()) : $catBreaking->the_post();
+              ?>
+              <div class="row">
+                <div class="col-lg-7 heading">
+                  <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-18"
+                      href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+                </div>
+                <div class="col-lg-5 image">
+                  <a href="<?php the_permalink(); ?>"><?php
+                                    $thumb_id = get_post_thumbnail_id(get_the_ID());
+                                    $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+                                    if (has_post_thumbnail()) {
+                                        the_post_thumbnail('news-and-event-image-420x250', array(
+                                        'class' => 'img-fluid w-100',
+                                        'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
+                                        ));
+                                    } else { ?>
+                    <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
+                      alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
+                      class="img-fluid w-100">
+                    <?php } 
+                                ?></a>
+                </div>
+              </div>
+              <?php
+                endwhile;
+                wp_reset_postdata();
+              ?>
             </div>
           </div>
         </div>

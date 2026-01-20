@@ -24,7 +24,7 @@
     // adding class on category li
   function add_class_on_category_li($classes, $item, $args, $depth ){
     if($args->theme_location === 'category-menu'){
-      $classes[] = 'tranding-heading py-1 mb-2 px-3 rounded heading list-unstyled ';
+      $classes[] = 'tranding-heading py-1 mb-2 px-3 rounded heading list-unstyled';
     }
     return $classes;
   }
@@ -35,7 +35,7 @@
   function add_class_on_category_li_a($atts, $item, $args, $depth){
     if($args->theme_location === 'category-menu'){
       $exixting_class = isset($atts['class']) ? $atts['class'] : '';
-      $atts['class'] = $exixting_class . ' text-decoration-none text-black font-size-20';
+      $atts['class'] = $exixting_class . ' text-decoration-none text-black font-size-20 category-menu';
     }
     return $atts;
   }
