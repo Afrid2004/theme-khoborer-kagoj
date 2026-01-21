@@ -6,6 +6,7 @@
       'primary-extra-menu'        => __('Primary Extra Menu', 'khoborer-kagoj'),
       'footer-menu'               => __('Footer Menu', 'khoborer-kagoj'),
       'category-menu'             => __('Trending Category', 'khoborer-kagoj'),
+      'country-menu'              => __('Country Category', 'khoborer-kagoj'),
     ));
   }
 

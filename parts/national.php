@@ -136,7 +136,7 @@
                 ));
                 while ($national->have_posts()):$national->the_post();
             ?>
-        <div class="col-md-3 mt-2 border-end">
+        <div class="col-md-3 mt-2 border-end border-last-none">
           <div class="row">
             <div class="col-12">
               <div class="image order-last">

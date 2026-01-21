@@ -1,3 +1,8 @@
+  @media (min-width: 768px) {
+    .border-last-none:last-child{
+        border-right: none !important;
+    }
+  }
   @media only screen and (max-width:768px) {
 
     .border-color {

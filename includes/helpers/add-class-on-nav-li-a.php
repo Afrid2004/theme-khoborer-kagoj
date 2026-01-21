@@ -21,6 +21,9 @@
   add_filter('nav_menu_link_attributes', 'add_class_on_nav_li_a', 10, 4);
 
 
+
+
+
     // adding class on category li
   function add_class_on_category_li($classes, $item, $args, $depth ){
     if($args->theme_location === 'category-menu'){
@@ -40,3 +43,27 @@
     return $atts;
   }
   add_filter('nav_menu_link_attributes', 'add_class_on_category_li_a', 10, 4);
+
+
+
+
+
+      // adding class on country category li
+  function add_class_on_country_category_li($classes, $item, $args, $depth ){
+    if($args->theme_location === 'country-menu'){
+      $classes[] = 'text-danger';
+    }
+    return $classes;
+  }
+  add_filter('nav_menu_css_class', 'add_class_on_country_category_li', 10, 4);
+
+
+  //adding class on country category li a
+  function add_class_on_country_category_li_a($atts, $item, $args, $depth){
+    if($args->theme_location === 'country-menu'){
+      $exixting_class = isset($atts['class']) ? $atts['class'] : '';
+      $atts['class'] = $exixting_class . ' text-decoration-none text-dark pe-3';
+    }
+    return $atts;
+  }
+  add_filter('nav_menu_link_attributes', 'add_class_on_country_category_li_a', 10, 4);

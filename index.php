@@ -9,20 +9,20 @@
     //national part
     get_template_part('parts/national');
 
-    // //politics part
-    //get_template_part('parts/politics');
+    //politics part
+    get_template_part('parts/politics');
 
-    // //english part
-    // get_template_part('parts/english');
+    //english part
+    get_template_part('parts/english');
 
-    // //arthokodi part
-    // get_template_part('parts/arthokodi');
+    //arthokodi part
+    get_template_part('parts/arthokodi');
 
-    // //special report main box
-    // get_template_part('parts/special-report-main-box');
+    //special report main box
+    get_template_part('parts/special-report-main-box');
 
-    // //world part
-    // get_template_part('parts/world');
+    //world part
+    get_template_part('parts/world');
 
     // //chottogram part
     // get_template_part('parts/chottogram');
