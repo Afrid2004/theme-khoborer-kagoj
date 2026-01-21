@@ -1,136 +1,179 @@
 <!-- national-part start -->
-    <div class="container">
-        <div class="row mt-4">
-            <div class="col-md-9 border-end pe-4">
-                <div class="row d-flex align-items-center border-bottom pb-3">
-                    <div class="col-md-6 col-6">
-                        <a class="text-decoration-none text-dark font-size-20 text-bold" href="category.html">জাতীয়</a>
-                    </div>
-                    <div class="col-md-6 col-6 d-flex align-items-center justify-content-end">
-                        <a class="text-decoration-none text-dark font-size-17" href="category.html">আারও <i class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="row border-bottom">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-md-9 col-12 mt-3">
-                                <div class="row border-end">
-                                    <div class="col-md-6 order-md-1 order-2 ">
-                                        <div class="heading">
-                                            <h4 class="mb-3 lh-base"><a class="text-decoration-none text-dark font-size-22"
-                                                    href="<?php the_permalink(); ?>">শাহজালালে ফয়েলে মোড়ানো ১৩০ কোটি টাকার কোকেন জব্দ</a></h4>
-                                        </div>
-                                        <div class="news-body d-md-block d-none">
-                                            <p class="lh-base">হযরত শাহজালাল আন্তর্জাতিক বিমানবন্দর থেকে ৮ কেজি ৬৬০
-                                                গ্রাম কোকেনসহ এক বিদেশি যাত্রীকে আটক করেছে শুল্ক গোয়েন্দা ও তদন্ত
-                                                অধিদপ্তর। জব্দ করা কোকেনের দাম প্রায়...</p>
-                                        </div>
-                                        <div class="time d-md-block d-none">
-                                            <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 order-md-2 order-1 ">
-                                        <div class="image">
-                                            <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/cocken.png'; ?>" alt="pic"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mt-3 d-md-block d-none">
-                                <div class="image">
-                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid" src="<?php echo get_template_directory_uri() . '/images/july.png'; ?>" alt="pic"></a>
+<?php
+    $original_id = 4;
+    $category_id = intval(get_theme_mod("rjs_category_dropdown_{$original_id}"));
+    if (empty($category_id)) {
+      $category_id = 4;
+    }
 
-                                </div>
-                                <div class="heading">
-                                    <h6 class="mb-3 mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20"
-                                            href="<?php the_permalink(); ?>">জুলাই শহিদ পরিবারে ভাতা বণ্টনের বিধিমালা</a></h6>
-                                </div>
-                                <div class="time">
-                                    <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    $category_name = get_cat_name($category_id);
+    $category_link = get_category_link($category_id);
+    ?>
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-9 border-end pe-4">
+      <div class="row d-flex align-items-center border-bottom pb-3">
+        <div class="col-md-6 col-6">
+          <a class="text-decoration-none text-dark font-size-20 text-bold"
+            href="<?php echo esc_url($category_link); ?>">
+            <?php echo esc_html($category_name); ?>
 
-                </div>
-                <div class="row mt-3 border-bottom pb-3">
-                    <div class="col-md-3 mt-2 border-end">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="image order-last">
-                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/rohinga.png'; ?>" alt="pic"></a>
-                                </div>
-                                <div class="heading order-first">
-                                    <h6 class="mb-3 mt-3 lh-base"> <a
-                                            class="text-decoration-none text-dark font-size-18" href="<?php the_permalink(); ?>">রোহিঙ্গা
-                                            ইস্যুতে বাংলাদেশের পাশে থাকার প্রতিশ্রুতি ১১ দেশের</a></h6>
-                                </div>
-                                <div class="time d-md-block d-none">
-                                    <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mt-2 border-end">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="image">
-                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/rohinga.png'; ?>" alt="pic"></a>
-                                </div>
-                                <div class="heading">
-                                    <h6 class="mb-3 mt-3 lh-base"> <a
-                                            class="text-decoration-none text-dark font-size-18" href="<?php the_permalink(); ?>">রোহিঙ্গা
-                                            ইস্যুতে বাংলাদেশের পাশে থাকার প্রতিশ্রুতি ১১ দেশের</a></h6>
-                                </div>
-                                <div class="time d-md-block d-none">
-                                    <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mt-2 border-end">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="image">
-                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/rohinga.png'; ?>" alt="pic"></a>
-                                </div>
-                                <div class="heading">
-                                    <h6 class="mb-3 mt-3 lh-base"> <a
-                                            class="text-decoration-none text-dark font-size-18" href="<?php the_permalink(); ?>">রোহিঙ্গা
-                                            ইস্যুতে বাংলাদেশের পাশে থাকার প্রতিশ্রুতি ১১ দেশের</a></h6>
-                                </div>
-                                <div class="time d-md-block d-none">
-                                    <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-3 mt-2">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="image">
-                                    <a href="<?php the_permalink(); ?>"><img class="img-fluid w-100" src="<?php echo get_template_directory_uri() . '/images/rohinga.png'; ?>" alt="pic"></a>
-                                </div>
-                                <div class="heading">
-                                    <h6 class="mb-3 mt-3 lh-base"> <a
-                                            class="text-decoration-none text-dark font-size-18" href="<?php the_permalink(); ?>">রোহিঙ্গা
-                                            ইস্যুতে বাংলাদেশের পাশে থাকার প্রতিশ্রুতি ১১ দেশের</a></h6>
-                                </div>
-                                <div class="time d-md-block d-none">
-                                    <p class="font-size-11">রূপসী বাংলা | ২৩ মিনিট আগে</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-md-3">
-
-                </div>
-            </div>
+            <!-- category No. On Off start -->
+            <?php
+                if (is_user_logged_in()) {
+                $categoryOnOff = get_theme_mod('npa_category_switcher_id');
+                if ('0' != $categoryOnOff) {
+                    echo '<span class="text-danger"> ' . esc_html($original_id) . ' </span>';
+                }
+                }
+            ?>
+          </a>
         </div>
-    
+        <div class="col-md-6 col-6 d-flex align-items-center justify-content-end">
+          <a class="text-decoration-none text-dark font-size-17" href="<?php echo esc_url($category_link); ?>">আরও <i
+              class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-12">
+          <div class="row">
+            <?php 
+                 $national = new WP_Query(array(
+                    'cat' => $category_id,
+                    'posts_per_page' => 1,
+                    'order' => 'DESC'
+                ));
+                while ($national->have_posts()):$national->the_post();
+            ?>
+            <div class="col-md-9 col-12 mt-3">
+              <div class="row border-end">
+                <div class="col-md-6 order-md-1 order-2 ">
+                  <div class="heading">
+                    <h4 class="mb-3 lh-base"><a class="text-decoration-none text-dark font-size-22"
+                        href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                  </div>
+                  <div class="news-body d-md-block d-none">
+                    <p class="lh-base"><?php $nationalText = get_the_content();
+                                        $nationalTrimingWords = WP_trim_words($nationalText, 25, '...');
+                                        echo $nationalTrimingWords;?></p>
+                  </div>
+                  <div class="time d-md-block d-none">
+                    <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+                  </div>
+                </div>
+                <div class="col-md-6 order-md-2 order-1 ">
+                  <div class="image">
+                    <a href="<?php the_permalink(); ?>"><?php
+              $thumb_id = get_post_thumbnail_id(get_the_ID());
+              $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+              if (has_post_thumbnail()) {
+                the_post_thumbnail('news-and-event-image-420x250', array(
+                  'class' => 'img-fluid mb-md-2 mb-1 w-100',
+                  'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
+                ));
+              } else { ?>
+                      <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
+                        alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
+                        class="mb-md-2 mb-1 img-fluid w-100">
+                      <?php } ?></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            ?>
+            <?php 
+                 $national = new WP_Query(array(
+                    'cat' => $category_id,
+                    'offset'    => 1,
+                    'posts_per_page' => 1,
+                    'order' => 'DESC'
+                ));
+                while ($national->have_posts()):$national->the_post();
+            ?>
+            <div class="col-md-3 mt-3 d-md-block d-none">
+              <div class="image">
+                <a href="<?php the_permalink(); ?>"><?php
+              $thumb_id = get_post_thumbnail_id(get_the_ID());
+              $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+              if (has_post_thumbnail()) {
+                the_post_thumbnail('news-and-event-image-420x250', array(
+                  'class' => 'img-fluid mb-md-2 mb-1 w-100',
+                  'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
+                ));
+              } else { ?>
+                  <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
+                    alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
+                    class="mb-md-2 mb-1 img-fluid w-100">
+                  <?php } ?></a>
+
+              </div>
+              <div class="heading">
+                <h6 class="mb-3 mt-3 lh-base"><a class="text-decoration-none text-dark font-size-20"
+                    href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+              </div>
+              <div class="time">
+                <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+              </div>
+            </div>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            ?>
+          </div>
+        </div>
+
+      </div>
+      <div class="row mt-3 border-bottom pb-3">
+        <?php 
+                 $national = new WP_Query(array(
+                    'cat' => $category_id,
+                    'offset'    => 2,
+                    'posts_per_page' => 4,
+                    'order' => 'DESC'
+                ));
+                while ($national->have_posts()):$national->the_post();
+            ?>
+        <div class="col-md-3 mt-2 border-end">
+          <div class="row">
+            <div class="col-12">
+              <div class="image order-last">
+                <a href="<?php the_permalink(); ?>"><?php
+              $thumb_id = get_post_thumbnail_id(get_the_ID());
+              $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+              if (has_post_thumbnail()) {
+                the_post_thumbnail('news-and-event-image-420x250', array(
+                  'class' => 'img-fluid mb-md-2 mb-1 w-100',
+                  'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
+                ));
+              } else { ?>
+                  <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
+                    alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
+                    class="mb-md-2 mb-1 img-fluid w-100">
+                  <?php } ?></a>
+              </div>
+              <div class="heading order-first">
+                <h6 class="mb-3 mt-3 lh-base"> <a class="text-decoration-none text-dark font-size-18"
+                    href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+              </div>
+              <div class="time d-md-block d-none">
+                <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php
+                endwhile;
+                wp_reset_postdata();
+            ?>
+      </div>
+      <div class="col-md-3">
+
+      </div>
     </div>
-    <!-- national-part end -->
+  </div>
+
+</div>
+<!-- national-part end -->

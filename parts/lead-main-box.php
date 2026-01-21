@@ -395,7 +395,7 @@
 
                 $videoargs = array(
                     'posts_per_page'      => 3,
-                    
+                    'offset'              => 1,
                     'cat'                 => $categoryvideo_id,
                     'orderby'             => 'date',
                     'order'               => 'DESC',
@@ -406,7 +406,7 @@
 
                 while ($catBreaking->have_posts()) : $catBreaking->the_post();
               ?>
-              <div class="row">
+              <div class="row mb-3">
                 <div class="col-lg-7 heading">
                   <h6 class="lh-base"><a class="text-decoration-none text-dark font-size-18"
                       href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
@@ -426,6 +426,9 @@
                       class="img-fluid w-100">
                     <?php } 
                                 ?></a>
+                </div>
+                <div class="col-12">
+                  <div class="border-bottom"></div>
                 </div>
               </div>
               <?php

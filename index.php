@@ -3,14 +3,14 @@
     //lead main box 
     get_template_part('parts/lead-main-box');
 
-    // //education part
-    // get_template_part('parts/education');
+    //education part
+    get_template_part('parts/education');
 
-    // //national part
-    // get_template_part('parts/national');
+    //national part
+    get_template_part('parts/national');
 
     // //politics part
-    // get_template_part('parts/politics');
+    //get_template_part('parts/politics');
 
     // //english part
     // get_template_part('parts/english');
