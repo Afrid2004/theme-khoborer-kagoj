@@ -1,65 +1,76 @@
  <!-- video- main box start -->
-     <div class="container-fluid special-report-bg py-md-3 py2 mt-md-3 mt-3 mb-md-3 mb-2">
-    <!-- special-report-box start -->
-    <div class="container py-3">
-        <div class="row d-flex align-items-center border-bottom mb-md-3 mb-2 pb-md-3 pb-2 mt-md-3 mt-2">
-            <div class="col-12 pt-3">
-                <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php the_permalink(); ?>">ভিডিও</a>
-            </div>
-        </div>
-        <div class="row pb-md-3 pb-2 g-3">
-            <div class="col-md-3 mt-md-3 mt-2 special-report-single">
-                <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
-                    <div class="image">
-                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
-                    </div>
-                    <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
-                    </div>                         
-                </div>
-                      
-            </div>
+ <?php
+    $original_id = 12;
+    $category_id = intval(get_theme_mod("rjs_category_dropdown_{$original_id}"));
+    if (empty($category_id)) {
+      $category_id = 12;
+    }
 
-            <div class="col-md-3 mt-md-3 mt-2 special-report-single">
-                <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
-                    <div class="image">
-                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
-                    </div>
-                    <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
-                    </div>                         
-                </div>
-                      
-            </div>
-            
-            <div class="col-md-3 mt-md-3 mt-2 special-report-single">
-                <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
-                    <div class="image">
-                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
-                    </div>
-                    <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
-                    </div>                         
-                </div>
-                      
-            </div>
-            
-            <div class="col-md-3 mt-md-3 mt-2 special-report-single">
-                <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
-                    <div class="image">
-                        <a href="<?php the_permalink(); ?>"> <img class="img-fluid rounded-top w-100" src="<?php echo get_template_directory_uri() . '/images/video-img.png'; ?>" alt="Vomra"></a>
-                    </div>
-                    <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
-                        <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark" href="<?php the_permalink(); ?>">ছাত্রসংসদ নির্বাচন/ তিন বিশ্ববিদ্যালয়ের খসড়া বাজেট প্রায় ৩ কোটি</a></h6>
-                    </div>                         
-                </div>
-                      
-            </div>            
+    $category_name = get_cat_name($category_id);
+    $category_link = get_category_link($category_id);
+    ?>
+ <div class="container-fluid special-report-bg py-md-3 py2 mt-md-3 mt-3 mb-md-3 mb-2">
+   <!-- special-report-box start -->
+   <div class="container py-3">
+     <div class="row d-flex align-items-center border-bottom mb-md-3 mb-2 pb-md-3 pb-2 mt-md-3 mt-2">
+       <div class="col-12 pt-3">
+         <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php echo esc_url($category_link); ?>">
+           <?php echo esc_html($category_name); ?>
 
-            
-            
-        </div>                          
+           <!-- category No. On Off start -->
+           <?php
+        if (is_user_logged_in()) {
+          $categoryOnOff = get_theme_mod('npa_category_switcher_id');
+          if ('0' != $categoryOnOff) {
+            echo '<span class="text-danger"> ' . esc_html($original_id) . ' </span>';
+          }
+        }
+        ?>
+           <!-- category No. On Off end -->
+         </a>
+       </div>
+     </div>
+     <div class="row pb-md-3 pb-2 g-3">
+       <?php
+      $videopart = new WP_Query(array(
+        'cat' => $category_id,
+        'posts_per_page' => 4,
+        'offset'        => 4,
+        'order' => 'DESC'
+      ));
+      while ($videopart->have_posts()):$videopart->the_post();
+    ?>
+       <div class="col-md-3 mt-md-3 mt-2 special-report-single">
+         <div class="spacila-bg-white bg-white rounded pb-md-2 pb-1">
+           <div class="image">
+             <a href="<?php the_permalink(); ?>"><?php
+              $thumb_id = get_post_thumbnail_id(get_the_ID());
+              $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
+              if (has_post_thumbnail()) {
+                the_post_thumbnail('news-and-event-image-420x250', array(
+                  'class' => 'img-fluid rounded-top w-100',
+                  'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
+                ));
+              } else { ?>
+               <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
+                 alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
+                 class="mb-md-2 mb-1 img-fluid w-100">
+               <?php } ?></a>
+           </div>
+           <div class="heading ms-md-3 ms-2 me-md-2 me-2 me-md-3">
+             <h6 class="mt-3 lh-base"><a class="text-decoration-none font-size-18 text-dark"
+                 href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+             </h6>
+           </div>
+         </div>
 
-        </div>
-    </div>
-    <!-- video- main-box end -->
+       </div>
+       <?php
+      endwhile;
+      wp_reset_postdata();
+    ?>
+     </div>
+
+   </div>
+ </div>
+ <!-- video- main-box end -->

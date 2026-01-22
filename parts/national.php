@@ -58,7 +58,7 @@
                                         echo $nationalTrimingWords;?></p>
                   </div>
                   <div class="time d-md-block d-none">
-                    <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+                    <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
                   </div>
                 </div>
                 <div class="col-md-6 order-md-2 order-1 ">
@@ -115,7 +115,7 @@
                     href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
               </div>
               <div class="time">
-                <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+                <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
               </div>
             </div>
             <?php
@@ -159,7 +159,7 @@
                     href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
               </div>
               <div class="time d-md-block d-none">
-                <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+                <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
               </div>
             </div>
           </div>

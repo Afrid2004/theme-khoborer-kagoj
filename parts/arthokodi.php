@@ -66,7 +66,7 @@
         <p class="lh-base d-md-block d-none"><?php $arthokodiText = get_the_content();
                                         $arthokodiTrimingWords = WP_trim_words($arthokodiText, 10, '...');
                                         echo $arthokodiTrimingWords;?></p>
-        <p class="font-size-14 d-md-block d-none"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+        <p class="font-size-14 d-md-block d-none"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
       </div>
       <?php
       endwhile;

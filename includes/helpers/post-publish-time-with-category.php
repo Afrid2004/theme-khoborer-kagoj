@@ -1,42 +1,46 @@
 <?php
 /**
- * Returns category link + time ago in Bangla with Bangla digits
- *
- * Example Output: "<a href='category-link'>জাতীয়</a> | ১৭ মিনিট আগে"
+ * Returns category link + time ago in Bangla
+ * Usage: khoborerkagoj_category_with_time_ago($category_id);
  */
-function khoborerkagoj_category_with_time_ago() {
+function khoborerkagoj_category_with_time_ago($forced_cat_id = 0) {
 
-    // === Get first category ===
-    $categories = get_the_category();
-    
-    if (!empty($categories)) {
-        $category = $categories[0];
-        $category_name = esc_html($category->name);
-        $category_link = esc_url(get_category_link($category->term_id));
-        $category_html = '<a class="text-dark text-decoration-none" href="' . $category_link . '">' . $category_name . '</a>';
+    // 1️⃣ category decide
+    if (!empty($forced_cat_id)) {
+        // section/category passed from query
+        $category = get_category((int) $forced_cat_id);
     } else {
-        $category_html = 'নিউজ';
+        // fallback → first post category
+        $categories = get_the_category();
+        $category = !empty($categories) ? $categories[0] : null;
     }
 
-    // === Current post time (site timezone) ===
-    $post_time = strtotime(get_post()->post_date); // পোস্ট publish time
-    $now_time  = current_time('timestamp');        // এখনকার সময় (site timezone)
+    if ($category) {
+        $category_name = esc_html($category->name);
+        $category_link = esc_url(get_category_link($category->term_id));
+    } else {
+        $category_name = 'নিউজ';
+        $category_link = '#';
+    }
 
-    // === Time difference ===
+    $category_html = '<a class="text-dark text-decoration-none" href="' . $category_link . '">' . $category_name . '</a>';
+
+    // 2️⃣ time ago
+    $post_time = strtotime(get_post()->post_date);
+    $now_time  = current_time('timestamp');
     $time_diff = human_time_diff($post_time, $now_time);
 
-    // === English to Bangla words ===
+    // English → Bangla words
     $eng  = ['seconds','second','minutes','minute','hours','hour','days','day','weeks','week','months','month','years','year'];
     $bang = ['সেকেন্ড','সেকেন্ড','মিনিট','মিনিট','ঘন্টা','ঘন্টা','দিন','দিন','সপ্তাহ','সপ্তাহ','মাস','মাস','বছর','বছর'];
 
     $time_ago_bn = str_replace($eng, $bang, $time_diff) . ' আগে';
 
-    // === Convert English digits to Bangla digits ===
-    $eng_digits = ['0','1','2','3','4','5','6','7','8','9'];
+    // English → Bangla digits
+    $eng_digits  = ['0','1','2','3','4','5','6','7','8','9'];
     $bang_digits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
 
     $time_ago_bn = str_replace($eng_digits, $bang_digits, $time_ago_bn);
 
-    // === Return category link + time ago ===
     return $category_html . ' | ' . $time_ago_bn;
 }

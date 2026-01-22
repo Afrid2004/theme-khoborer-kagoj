@@ -86,7 +86,7 @@
               </p>
             </div>
             <div class="time">
-              <p class="font-size-11"> <?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+              <p class="font-size-11"> <?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
             </div>
           </div>
           <?php
@@ -94,7 +94,9 @@
                 wp_reset_postdata();
             ?>
           <div class="col-md-6 col-12">
-            <?php
+            <div class="row">
+              <div class="col-12">
+                <?php
                 $original_id = 1;
                 $category_id = intval(get_theme_mod("rjs_category_dropdown_{$original_id}"));
                 if (empty($category_id)) {
@@ -114,19 +116,20 @@
                 ));
                 while ($leadBreakingNews->have_posts()):$leadBreakingNews->the_post();
             ?>
-            <div class="row border-bottom pb-2 mb-3">
-              <div class="col-lg-7 order-md-1 order-2">
-                <div class="heading">
-                  <h4 class="mb-3 font-size-20"><a class="text-decoration-none text-dark"
-                      href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                </div>
-                <div class="time">
-                  <p class="font-size-11 mb-0"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
-                </div>
-              </div>
-              <div class="col-lg-5 mb-2">
-                <div class="order-md-2 order-1 mb-2 mb-md-0">
-                  <a href="#"><?php
+                <div class="border-bottom border-bottom-none  pb-2 mb-3">
+                  <div class="row">
+                    <div class="col-lg-7 order-md-1 order-2">
+                      <div class="heading">
+                        <h4 class="mb-3 font-size-20"><a class="text-decoration-none text-dark"
+                            href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                      </div>
+                      <div class="time">
+                        <p class="font-size-11 mb-0"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 mb-2">
+                      <div class="order-md-2 order-1 mb-2 mb-md-0">
+                        <a href="#"><?php
                                 $thumb_id = get_post_thumbnail_id(get_the_ID());
                                 $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
                                 if (has_post_thumbnail()) {
@@ -135,18 +138,22 @@
                                     'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                                     ));
                                 } else { ?>
-                    <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
-                      alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
-                      class="img-fluid w-100">
-                    <?php } 
+                          <img
+                            src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
+                            alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
+                            class="img-fluid w-100">
+                          <?php } 
                             ?></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                ?>
               </div>
             </div>
-            <?php
-                endwhile;
-                wp_reset_postdata();
-            ?>
           </div>
         </div>
         <!-- lead-box end -->

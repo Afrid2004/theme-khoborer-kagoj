@@ -68,7 +68,7 @@
          </p>
        </div>
        <div class="time d-none d-md-block">
-         <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+         <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
        </div>
 
      </div>

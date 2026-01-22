@@ -24,14 +24,14 @@
     //world part
     get_template_part('parts/world');
 
-    // //chottogram part
-    // get_template_part('parts/chottogram');
+    //chottogram part
+    get_template_part('parts/chottogram');
       
-    // //video main box
-    // get_template_part('parts/video-main-box');    
+    //video main box
+    get_template_part('parts/video-main-box');    
 
-    // //ruposi bangla
-    // get_template_part('parts/ruposi-bangla');  
+    //ruposi bangla
+    get_template_part('parts/ruposi-bangla');  
 
     // //play part
     // get_template_part('parts/play');   

@@ -70,7 +70,7 @@
                                         echo $reportTrimingWords;?></p>
           </div>
           <div class="time ms-md-3 ms-2 ms-md-3 ms-2 me-md-2 me-2 me-md-3">
-            <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+            <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
           </div>
         </div>
       </div>

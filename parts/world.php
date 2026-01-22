@@ -34,7 +34,7 @@
            class="col-md-8 d-none d-lg-flex align-items-lg-center col-lg-8 sub-category hover-world d-none d-md-block">
            <nav class="text-nowrap overflow-x-scroll category">
              <?php function primary_country_menu_fallback(){?>
-             <ul class="ul d-flex gap-3 mb-0">
+             <ul class="ul d-flex gap-3 mb-0 p-0">
                <li class="text-danger"><a class="text-decoration-none text-dark pe-3"
                    href="<?php the_permalink(); ?>">দক্ষিণ এশিয়া</a></li>
                <li class="text-danger"><a class="text-decoration-none text-dark pe-3"
@@ -53,7 +53,7 @@
              <?php }
                 wp_nav_menu(array(
                     'theme_location'        => 'country-menu',
-                    'menu_class'            => 'ul d-flex gap-3 mb-0',
+                    'menu_class'            => 'ul d-flex gap-3 mb-0 p-0',
                     'container'             => false,
                     'depth'                 => 0,
                     'fallback_cb'           => 'primary_country_menu_fallback'
@@ -94,7 +94,7 @@
                                         echo $worldTrimingWords;?></p>
                    </div>
                    <div class="time d-none d-md-block">
-                     <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+                     <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
                    </div>
 
                  </div>
@@ -149,7 +149,7 @@
                      href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
                </div>
                <div class="time d-none d-md-block">
-                 <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+                 <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
                </div>
              </div>
              <?php
@@ -191,7 +191,7 @@
                  href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
            </div>
            <div class="time d-none d-md-block">
-             <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+             <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
            </div>
          </div>
          <?php
@@ -270,7 +270,7 @@
                    href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
              </div>
              <div class="time d-none d-md-block">
-               <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago(); ?></p>
+               <p class="font-size-11"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
              </div>
            </div>
          </div>
