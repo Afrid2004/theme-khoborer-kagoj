@@ -33,14 +33,14 @@
     //ruposi bangla
     get_template_part('parts/ruposi-bangla');  
 
-    // //play part
-    // get_template_part('parts/play');   
+    //play part
+    get_template_part('parts/play');   
 
-    // //rong part
-    // get_template_part('parts/rong');  
+    //rong part
+    get_template_part('parts/rong');  
      
-    // //karmojog-juktitarko
-    // get_template_part('parts/karmojog-juktitarko');     
+    //karmojog-juktitarko
+    get_template_part('parts/karmojog-juktitarko');     
 
     // //subarnorekha part
     // get_template_part('parts/subarnorekha');

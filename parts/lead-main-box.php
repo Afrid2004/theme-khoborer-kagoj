@@ -57,7 +57,7 @@
                                 $thumb_id = get_post_thumbnail_id(get_the_ID());
                                 $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
                                 if (has_post_thumbnail()) {
-                                    the_post_thumbnail('news-and-event-image-420x250', array(
+                                    the_post_thumbnail('large', array(
                                     'class' => 'img-fluid w-100',
                                     'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                                     ));
@@ -124,7 +124,8 @@
                             href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                       </div>
                       <div class="time">
-                        <p class="font-size-11 mb-0"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
+                        <p class="font-size-11 mb-0"><?php echo khoborerkagoj_category_with_time_ago($category_id); ?>
+                        </p>
                       </div>
                     </div>
                     <div class="col-lg-5 mb-2">
@@ -133,7 +134,7 @@
                                 $thumb_id = get_post_thumbnail_id(get_the_ID());
                                 $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
                                 if (has_post_thumbnail()) {
-                                    the_post_thumbnail('news-and-event-image-420x250', array(
+                                    the_post_thumbnail('large', array(
                                     'class' => 'img-fluid w-100',
                                     'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                                     ));
@@ -155,6 +156,7 @@
               </div>
             </div>
           </div>
+
         </div>
         <!-- lead-box end -->
         <!-- trading box start -->
@@ -361,7 +363,7 @@
                                     $thumb_id = get_post_thumbnail_id(get_the_ID());
                                     $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
                                     if (has_post_thumbnail()) {
-                                        the_post_thumbnail('news-and-event-image-420x250', array(
+                                        the_post_thumbnail('large', array(
                                         'class' => 'img-fluid w-100',
                                         'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                                         ));
@@ -423,7 +425,7 @@
                                     $thumb_id = get_post_thumbnail_id(get_the_ID());
                                     $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
                                     if (has_post_thumbnail()) {
-                                        the_post_thumbnail('news-and-event-image-420x250', array(
+                                        the_post_thumbnail('large', array(
                                         'class' => 'img-fluid w-100',
                                         'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                                         ));

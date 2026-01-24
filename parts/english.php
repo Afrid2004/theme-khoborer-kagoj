@@ -45,7 +45,7 @@
               $thumb_id = get_post_thumbnail_id(get_the_ID());
               $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
               if (has_post_thumbnail()) {
-                the_post_thumbnail('news-and-event-image-420x250', array(
+                the_post_thumbnail('large', array(
                   'class' => 'img-fluid mb-md-2 mb-1 w-100',
                   'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                 ));
@@ -85,7 +85,7 @@
               $thumb_id = get_post_thumbnail_id(get_the_ID());
               $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
               if (has_post_thumbnail()) {
-                the_post_thumbnail('news-and-event-image-420x250', array(
+                the_post_thumbnail('large', array(
                   'class' => 'img-fluid mb-md-2 mb-1 w-100',
                   'alt' => $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title())
                 ));

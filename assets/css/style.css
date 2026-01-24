@@ -445,7 +445,9 @@ li.text-danger:nth-child(1) {
 .border-mr-right {
     border-right: none !important;
 }
-
+.margin-top-none:first-child{
+    margin-top: 0rem !important;
+}
 
 
 /* 
