@@ -35,7 +35,6 @@ if (file_exists(get_template_directory() . '/includes/helpers/post-publish-time-
   require_once('includes/helpers/post-publish-time-with-category.php');
 }
 
-
 // all-categories
 if (file_exists(get_template_directory() . '/includes/customizer/all-categories.php')) {
   include_once('includes/customizer/all-categories.php');
@@ -51,27 +50,12 @@ if (file_exists(get_template_directory() . '/includes/helpers/after-setup-theme.
   include_once('includes/helpers/after-setup-theme.php');
 }
 
-/* ===== Post View Count ===== */
-function set_post_views($postID) {
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if ($count == '') {
-        $count = 0;
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-    } else {
-        $count++;
-        update_post_meta($postID, $count_key, $count);
-    }
+//for juktitorko post type
+if (file_exists(get_template_directory() . '/includes/post-type/juktitorko-post-type.php')) {
+    include_once('includes/post-type/juktitorko-post-type.php');
 }
 
-function get_post_views($postID) {
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if ($count == '') {
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-        return "0 বার পড়া হয়েছে";
-    }
-    return $count . " বার পড়া হয়েছে";
+//gallery post type
+if (file_exists(get_template_directory() . '/includes/post-type/gallery-post-type.php')) {
+    include_once('includes/post-type/gallery-post-type.php');
 }

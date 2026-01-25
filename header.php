@@ -11,7 +11,7 @@
 <body>
   <!-- header-responsive-part -->
   <div class="container-fluid bg-white px-0 d-md-none d-flex align-items-center justify-content-between position-sticky"
-    style="top:0;">
+    style="top:0; z-index:2;">
     <div class="container shadow py-3 pe-4">
       <div class="row d-flex justify-content-between align-items-center">
         <div class="col-7">
@@ -226,7 +226,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-danger mt-md-3 d-none d-md-block position-sticky" style="top: 0rem;">
+  <div class="container-fluid bg-danger mt-md-3 d-none d-md-block position-sticky" style="top: 0rem;z-index:2;">
     <div class="container px-0">
       <div class="row align-items-center">
         <div class="col-md-11 px-0 d-flex align-items-center">

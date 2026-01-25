@@ -448,7 +448,17 @@ li.text-danger:nth-child(1) {
 .margin-top-none:first-child{
     margin-top: 0rem !important;
 }
-
+.image-caption{
+    background-image: linear-gradient(to top, rgba(0,0,0,1), transparent);
+    display: flex;
+    align-items: flex-end;
+}
+.gallery-container .gallery-img{
+    transition: all .5s ease-in-out;
+}
+.gallery-container:hover .gallery-img{
+    transform: scale(1.2);
+}
 
 /* 
 .border-lead {

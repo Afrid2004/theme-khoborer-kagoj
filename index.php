@@ -42,22 +42,22 @@
     //karmojog-juktitarko
     get_template_part('parts/karmojog-juktitarko');     
 
-    // //subarnorekha part
-    // get_template_part('parts/subarnorekha');
+    //subarnorekha part
+    get_template_part('parts/subarnorekha');
 
-    // //fashion plus
-    // get_template_part('parts/fashion-plus'); 
+    //fashion plus
+    get_template_part('parts/fashion-plus'); 
      
-    // //technology and campus
-    // get_template_part('parts/technology-and-campus'); 
+    //technology and campus
+    get_template_part('parts/technology-and-campus'); 
 
-    // //four item box
-    // get_template_part('parts/four-item-box');
+    //four item box
+    get_template_part('parts/four-item-box');
     
-    // //second four item box
-    // get_template_part('parts/second-four-item-box');
+    //second four item box
+    get_template_part('parts/second-four-item-box');
      
-    // //gallery part
-    // get_template_part('parts/gallery');
+    //gallery part
+    get_template_part('parts/gallery');
 
  get_footer(); 

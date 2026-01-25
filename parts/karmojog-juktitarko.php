@@ -140,15 +140,15 @@
          </div>
        </div>
 
-       <?php 
-        
-                $juktitorko = new WP_Query(array(
-                    'cat' => $category_id,
-                    'posts_per_page' => 1,
-                    'order' => 'DESC'
-                ));
-                while ($juktitorko->have_posts()):$juktitorko->the_post();
-         ?>
+       <?php        
+            $juktitorko = new WP_Query(array(
+                  'post_type' => 'juktitorko',
+                  'cat' => $category_id,
+                  'posts_per_page' => 1,
+                  'order' => 'DESC'
+            ));
+            while ($juktitorko->have_posts()):$juktitorko->the_post();
+        ?>
        <div class="row d-flex align-items-center border-bottom">
          <div class="col-md-4 col-12 jukti-lead p-3 ">
            <a class="d-flex justify-content-center" href="<?php the_permalink(); ?>"><?php
@@ -174,7 +174,7 @@
            <div class="news-body">
              <p><a class="text-decoration-none text-dark" href="<?php the_permalink(); ?>"><?php $juktiText = get_the_content();
                                         $juktiTrimingWords = WP_trim_words($juktiText, 25, '...');
-                                        echo $juktiTrimingWords;?> ?></a></p>
+                                        echo $juktiTrimingWords;?> </a></p>
            </div>
            <div class="writer-name">
              <p> <a class="text-decoration-none text-dark font-size-16 fw-200" href="<?php the_permalink(); ?>"> <i
@@ -200,10 +200,11 @@
        <!-- jukti-single start -->
        <?php 
                 $juktitorko = new WP_Query(array(
-                    'cat' => $category_id,
-                    'offset' => 1,
-                    'posts_per_page' => 3,
-                    'order' => 'DESC'
+                            'post_type' => 'juktitorko',
+                            'cat' => $category_id,
+                            'offset'    => 1,
+                            'posts_per_page' => 3,
+                            'order' => 'DESC'
                 ));
                 while ($juktitorko->have_posts()):$juktitorko->the_post();
         ?>
@@ -231,14 +232,16 @@
            </div>
            <div class="writer-name">
              <p> <a class="text-decoration-none text-dark font-size-16" href="<?php the_permalink(); ?>"> <i
-                   class="fa-solid fa-user-pen pe-2 text-danger"></i> <?php 
+                   class="fa-solid fa-user-pen pe-2 text-danger"></i>
+                 <?php 
                     $juktiLekhok = get_field('juktitorko_lekhok');
                     if(!empty($juktiLekhok)){
                         echo $juktiLekhok;
                     }else{
                         echo '-';
                     }
-                ?></a></p>
+                ?>
+               </a></p>
            </div>
          </div>
        </div>
