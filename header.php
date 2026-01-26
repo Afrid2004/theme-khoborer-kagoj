@@ -15,8 +15,11 @@
     <div class="container shadow py-3 pe-4">
       <div class="row d-flex justify-content-between align-items-center">
         <div class="col-7">
-          <a href="<?php echo esc_url(home_url()); ?>"><img class="img-fluid" src="<?php echo get_template_directory_uri() .
-                  "/images/logo.png"; ?>" alt="Main Logo"></a>
+          <?php $default_main_logo = get_template_directory_uri() . '/images/logo.png'; ?>
+          <a href="<?php echo esc_url(home_url()); ?>">
+            <img src="<?php echo get_theme_mod('npa-main-logo', $default_main_logo); ?>"
+              alt="<?php echo esc_attr(bloginfo('name')) ?>" height="auto" class="img-fluid">
+          </a>
         </div>
 
 
@@ -196,8 +199,11 @@
 
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-          <a href="<?php echo esc_url(home_url()); ?>"><img class="img-fluid" src="<?php echo get_template_directory_uri() .
-                  "/images/logo.png"; ?>" alt="Main Logo"></a>
+          <?php $default_main_logo = get_template_directory_uri() . '/images/logo.png'; ?>
+          <a href="<?php echo esc_url(home_url()); ?>">
+            <img src="<?php echo get_theme_mod('npa-main-logo', $default_main_logo); ?>"
+              alt="<?php echo esc_attr(bloginfo('name')) ?>" height="auto" class="img-fluid">
+          </a>
         </div>
         <div class="col-md-3 d-flex align-items-end flex-column">
           <h3>

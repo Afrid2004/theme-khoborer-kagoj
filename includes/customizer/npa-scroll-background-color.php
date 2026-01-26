@@ -6,7 +6,7 @@
  * ==============================
  */
 $wp_customize->add_section('npa_theme_bg', array(
-    'title'         => __('Scroll ', 'school-theme'),
+    'title'         => __('Scroll ', 'khoborer-kagoj'),
     'priority'      => 30,
     'description'   => 'If you are intersted to chang theme color, you can do it from here'
 ));
@@ -16,7 +16,7 @@ $wp_customize->add_setting('npa_theme_bg_color', array(
     'transport' => 'refresh'
 ));
 $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'npa_theme_bg_color', array(
-    'label'         => __('Theme Color', 'school-theme'),
+    'label'         => __('Theme Color', 'khoborer-kagoj'),
     'section'       => 'npa_theme_bg',
     'settings'       => 'npa_theme_bg_color',
     'description'   => 'If you are interested to change theme color, you can do it from here',
@@ -27,7 +27,7 @@ $wp_customize->add_setting('npa_theme_text_color', array(
     'transport' => 'refresh'
 ));
 $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'npa_theme_text_color', array(
-    'label'         => __('Theme Text Color', 'school-theme'),
+    'label'         => __('Theme Text Color', 'khoborer-kagoj'),
     'section'       => 'npa_theme_bg',
     'settings'       => 'npa_theme_text_color',
     'description'   => __(''),
@@ -61,7 +61,7 @@ $wp_customize->add_setting('npa_scroll_bg', array(
     'transport' => 'refresh'
 ));
 $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'npa_scroll_bg', array(
-    'label'     => __('Scroll Background Color', 'school-theme'),
+    'label'     => __('Scroll Background Color', 'khoborer-kagoj'),
     'section'   => 'npa_theme_bg',
     'settings'  => 'npa_scroll_bg'
 )));
@@ -72,7 +72,7 @@ $wp_customize->add_setting('npa_scroll_text_color', array(
     'transport' => 'refresh'
 ));
 $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'npa_scroll_text_color', array(
-    'label'     => __('Scroll Text Color', 'school-theme'),
+    'label'     => __('Scroll Text Color', 'khoborer-kagoj'),
     'section'   => 'npa_theme_bg',
     'settings'  =>  'npa_scroll_text_color'
 )));

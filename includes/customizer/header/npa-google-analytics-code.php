@@ -14,7 +14,7 @@ $wp_customize->add_setting('npa_google_analytics_code_setting', array(
 ));
 
 $wp_customize->add_control('npa_google_analytics_code_setting', array(
-  'label'         => esc_html__('Google Analytics Code', 'school-theme'),
+  'label'         => esc_html__('Google Analytics Code', 'khoborer-kagoj'),
   'description'   => esc_html__('Google Analytics Code Paste Here'),
   'settings'      => 'npa_google_analytics_code_setting',
   'section'       => 'npa_google_analytics_code',

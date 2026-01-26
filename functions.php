@@ -59,3 +59,18 @@ if (file_exists(get_template_directory() . '/includes/post-type/juktitorko-post-
 if (file_exists(get_template_directory() . '/includes/post-type/gallery-post-type.php')) {
     include_once('includes/post-type/gallery-post-type.php');
 }
+
+//npa customizer
+if (file_exists(get_template_directory() . '/includes/customizer/npa-customizer.php')) {
+    include_once('includes/customizer/npa-customizer.php');
+}
+
+//for class-tgm-plugin-activation
+if (file_exists(get_template_directory() . '/includes/helpers/class-tgm-plugin-activation.php')) {
+    include_once('includes/helpers/class-tgm-plugin-activation.php');
+}
+
+//for tgm
+if (file_exists(get_template_directory() . '/includes/helpers/tgm.php')) {
+    include_once('includes/helpers/tgm.php');
+}

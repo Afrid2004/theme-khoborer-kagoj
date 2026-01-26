@@ -2,7 +2,7 @@
 
 //Social Media Link
 $wp_customize->add_section('npa_social_media', array(
-  'title'         =>  __('Social Media Links', 'school-theme'),
+  'title'         =>  __('Social Media Links', 'khoborer-kagoj'),
   'priority'      => 40,
   'description'   => 'If you want to update social media links, you can do it here.'
 ));
@@ -15,7 +15,7 @@ $wp_customize->add_setting($npa_social_media_1, array(
   'transport' => 'refresh'
 ));
 $wp_customize->add_control($npa_social_media_1, array(
-  'label'         => __('Facebook', 'school-theme'),
+  'label'         => __('Facebook', 'khoborer-kagoj'),
   'description'   => __('Paste Facebook link here'),
   'settings'      => $npa_social_media_1,
   'section'       => 'npa_social_media',
@@ -31,7 +31,7 @@ $wp_customize->add_setting($npa_social_media_2, array(
   'transport' => 'refresh'
 ));
 $wp_customize->add_control($npa_social_media_2, array(
-  'label'         => __('Twitter', 'school-theme'),
+  'label'         => __('Twitter', 'khoborer-kagoj'),
   'description'   => __('Paste Twitter link here'),
   'settings'      => $npa_social_media_2,
   'section'       => 'npa_social_media',
@@ -46,7 +46,7 @@ $wp_customize->add_setting($npa_social_media_3, array(
   'transport' => 'refresh'
 ));
 $wp_customize->add_control($npa_social_media_3, array(
-  'label'         => __('Youtube', 'school-theme'),
+  'label'         => __('Youtube', 'khoborer-kagoj'),
   'description'   => __('Paste Youtube link here'),
   'settings'      => $npa_social_media_3,
   'section'       => 'npa_social_media',

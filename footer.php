@@ -5,9 +5,11 @@
      <div class="row">
        <div class="col-12 col-lg-4">
          <div class="logo-footer">
-           <a href="<?php echo esc_url(home_url()); ?>"
-             class="d-flex justify-content-center justify-content-lg-start"><img class="mw-75-percent"
-               src="<?php echo get_template_directory_uri() . '/images/logo-footer.png'; ?>" alt="Logo"></a>
+           <?php $default_main_logo = get_template_directory_uri() . '/images/logo.png'; ?>
+           <a href="<?php echo esc_url(home_url()); ?>">
+             <img src="<?php echo get_theme_mod('npa-main-logo', $default_main_logo); ?>"
+               alt="<?php echo esc_attr(bloginfo('name')) ?>" height="auto" class="img-fluid">
+           </a>
          </div>
          <div class="editor-section text-center text-lg-start">
            <div
