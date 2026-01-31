@@ -31,11 +31,11 @@ $wp_customize->add_setting($npa_social_media_2, array(
   'transport' => 'refresh'
 ));
 $wp_customize->add_control($npa_social_media_2, array(
-  'label'         => __('Twitter', 'khoborer-kagoj'),
-  'description'   => __('Paste Twitter link here'),
+  'label'         => __('Youtube', 'khoborer-kagoj'),
+  'description'   => __('Paste Youtube link here'),
   'settings'      => $npa_social_media_2,
   'section'       => 'npa_social_media',
-  'type'          => 'url'
+  'type'          => 'text'
 ));
 
 // Social Media Link 3
@@ -46,9 +46,39 @@ $wp_customize->add_setting($npa_social_media_3, array(
   'transport' => 'refresh'
 ));
 $wp_customize->add_control($npa_social_media_3, array(
-  'label'         => __('Youtube', 'khoborer-kagoj'),
-  'description'   => __('Paste Youtube link here'),
+  'label'         => __('Instagram', 'khoborer-kagoj'),
+  'description'   => __('Paste Instagram link here'),
   'settings'      => $npa_social_media_3,
+  'section'       => 'npa_social_media',
+  'type'          => 'text'
+));
+
+// Social Media Link 4
+$npa_social_media_4 = 'npa_social_media_4';
+
+$wp_customize->add_setting($npa_social_media_4, array(
+  'default' => '#',
+  'transport' => 'refresh'
+));
+$wp_customize->add_control($npa_social_media_4, array(
+  'label'         => __('Linkedin', 'khoborer-kagoj'),
+  'description'   => __('Paste Linkedin link here'),
+  'settings'      => $npa_social_media_4,
+  'section'       => 'npa_social_media',
+  'type'          => 'text'
+));
+
+// Social Media Link 5
+$npa_social_media_5 = 'npa_social_media_5';
+
+$wp_customize->add_setting($npa_social_media_5, array(
+  'default' => '#',
+  'transport' => 'refresh'
+));
+$wp_customize->add_control($npa_social_media_5, array(
+  'label'         => __('Twitter', 'khoborer-kagoj'),
+  'description'   => __('Paste Twitter link here'),
+  'settings'      => $npa_social_media_5,
   'section'       => 'npa_social_media',
   'type'          => 'text'
 ));

@@ -459,6 +459,15 @@ li.text-danger:nth-child(1) {
 .gallery-container:hover .gallery-img{
     transform: scale(1.2);
 }
+.link{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(225, 225, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* 
 .border-lead {

@@ -1,5 +1,5 @@
  <!-- footer part start -->
- <div class="container-fluid footer-bg-color mt-md-5 py-md-5">
+ <div class="container-fluid footer-bg-color py-md-5">
    <div class="container">
 
      <div class="row">
@@ -15,16 +15,29 @@
            <div
              class="editor d-flex justify-content-lg-start align-items-center mt-md-5 mt-3 text-center justify-content-center text-lg-start">
              <span class="text-danger p-e-3">সম্পাদক:</span>
-             <h6 class="ps-3 pt-2">মোস্তফা কামাল</h6>
+             <h6 class="ps-2 pt-2"><?php 
+             
+                $editorName = get_theme_mod('editorName', 'এস এ ফারুক'); 
+                echo $editorName;
+             
+             ?></h6>
            </div>
-           <p>editor@khaborerkagoj.com</p>
+           <p><?php 
+             
+                $editorEmail = get_theme_mod('editor_email', 'faroque.computer@gmail.com'); 
+                echo $editorEmail;
+             
+             ?></p>
          </div>
          <div class="address text-align-justify mt-md-5 mt-3 text-center text-lg-start">
-           <p>১১৫ কাজী নজরুল ইসলাম এভিনিউ, লেভেল-১৩, বাংলামোটর, ঢাকা-১০০০ থেকে প্রকাশক মোস্তফা কামাল
-             কর্তৃক
-             প্রকাশিত। স্কাইব্রিজ প্রিন্টিং এন্ড প্যাকেজিং লিমিটেড, ৭/এ/১ তেজগাঁও শিল্প এলাকা, ঢাকা
-             থেকে
-             মুদ্রিত।</p>
+           <p>
+             <?php 
+             
+                $address = get_theme_mod('address', 'ঢাকা'); 
+                echo $address;
+             
+             ?>
+           </p>
          </div>
        </div>
 
@@ -65,47 +78,74 @@
            <h6 class="text-danger fw-bold">বার্তা, সম্পাদকীয় ও ফিচার বিভাগ</h6>
          </div>
          <div class="news-room d-flex justify-content-center justify-content-lg-end">
-           <p>+৮৮০২২২৬৬৬৫০৫৩-৪</p>
+           <p><?php 
+             
+                $nedPhone = get_theme_mod('news_editorial_department_phone', '+৮৮০২২২৬৬৬৫০৫৩-৪'); 
+                echo $nedPhone;
+             
+             ?></p>
          </div>
          <div class="news-room d-flex justify-content-center justify-content-lg-end">
            <h6 class="text-danger fw-bold">বিজ্ঞাপন</h6>
          </div>
          <div class="news-room d-flex justify-content-center justify-content-lg-end">
-           <p>+৮৮০২২২৬৬৬৫০৫১</p>
+           <p><?php 
+             
+                $adPhone = get_theme_mod('advertisement_phone', '+৮৮০২২২৬৬৬৫০৫১'); 
+                echo $adPhone;
+             
+             ?></p>
          </div>
          <div class="news-room d-flex justify-content-center justify-content-lg-end">
            <h6 class="text-danger fw-bold">সার্কুলেশন</h6>
          </div>
          <div class="news-room d-flex justify-content-center justify-content-lg-end">
-           <p>৮৮০২২২৬৬৬৫০৫২</p>
+           <p><?php 
+             
+                $circulationPhone = get_theme_mod('circulation_phone', '+৮৮০২২২৬৬৬৫০৫২'); 
+                echo $circulationPhone;
+             
+             ?></p>
          </div>
          <div class="news-room d-flex justify-content-center justify-content-lg-end">
-           <p>info@khaborerkagoj.com</p>
+           <p><?php 
+             
+                $email = get_theme_mod('email', 'info@khaborerkagoj.com'); 
+                echo $email;
+             
+             ?></p>
          </div>
 
          <!-- social-media start -->
          <div class="row">
            <div class="col-12 d-flex justify-content-center justify-content-lg-end warp-flex mt-md-4 mt-3">
              <div class="pt-2 pb-2 d-flex justify-content-end flex-wrap font-md social-icon-box">
+               <?php
+                  $social_media_facebook = get_theme_mod('npa_social_media_1', '#');
+                  $social_media_youtube = get_theme_mod('npa_social_media_2', '#');
+                  $social_media_instagram = get_theme_mod('npa_social_media_3', '#');
+                  $social_media_linkedin = get_theme_mod('npa_social_media_4', '#');
+              ?>
                <div
                  class="faceboo social-icon-width d-flex justify-content-center justify-content-lg-end align-items-center mb-3">
                  <a class="text-decoration-none text-dark  align-items-center d-flex gap-2"
-                   href="https://www.facebook.com/"><i class="bi bi-facebook font-size-22"></i> Facebook</a>
+                   href="<?php echo $social_media_facebook; ?>"><i class="bi bi-facebook font-size-22"></i> Facebook</a>
                </div>
                <div
                  class="youtub social-icon-width d-flex justify-content-center justify-content-lg-end align-items-center mb-3">
                  <a class="text-decoration-none text-dark  align-items-center d-flex gap-2"
-                   href="https://www.facebook.com/"><i class="bi bi-youtube font-size-22"></i> Youtube</a>
+                   href="<?php echo $social_media_youtube; ?>"><i class="bi bi-youtube font-size-22"></i> Youtube</a>
                </div>
                <div
                  class="youtub social-icon-width d-flex justify-content-center justify-content-lg-end align-items-center mb-3">
                  <a class="text-decoration-none text-dark  align-items-center d-flex gap-2"
-                   href="https://www.facebook.com/"><i class="bi bi-instagram font-size-22"></i></i> Instagram</a>
+                   href="<?php echo $social_media_instagram; ?>"><i class="bi bi-instagram font-size-22"></i></i>
+                   Instagram</a>
                </div>
                <div
                  class="youtub social-icon-width d-flex justify-content-center justify-content-lg-end align-items-center mb-3">
                  <a class="text-decoration-none text-dark  align-items-center d-flex gap-2"
-                   href="https://www.facebook.com/"><i class="bi bi-linkedin font-size-22"></i> Linkedin</a>
+                   href="<?php echo $social_media_linkedin; ?>"><i class="bi bi-linkedin font-size-22"></i> Linkedin</a>
                </div>
              </div>
            </div>
@@ -115,7 +155,12 @@
        </div>
      </div>
      <div class="col-md-12 bg-dark mt-md-3 mt-1">
-       <p class="font-size-16 text-white text-center py-md-1">© ২০২৫ সর্বস্বত্ব সংরক্ষিত | খবরের কাগজ</p>
+       <p class="font-size-16 text-white text-center py-md-1"><?php 
+             
+                $rightReserved = get_theme_mod('rightReserved', '© ২০২৬ সর্বস্বত্ব সংরক্ষিত | খবরের কাগজ'); 
+                echo $rightReserved;
+             
+             ?></p>
      </div>
    </div>
  </div>

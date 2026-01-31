@@ -1,6 +1,6 @@
 <?php
 $wp_customize->add_section('npa_header_area', array(
-    'title'         =>  __('Main Logo, Portal Name and other', 'khoborer-kagoj'),
+    'title'         =>  __('Main Logo', 'khoborer-kagoj'),
     'description'   => 'If you want to update main logo, you can do it here.',
     'panel'         => 'npa_header_panel',
 ));
@@ -35,54 +35,4 @@ $wp_customize->add_control('name-of-portal', array(
     'settings'  => 'name-of-portal',
     'section'   => 'npa_header_area',
     'type'      => 'text'
-));
-
-
-
-/**
- * ==========================
- * Address
- * ==========================
- */
-$wp_customize->add_setting('address', array(
-    'default'       => 'ঢাকা',
-    'transport'     => 'refresh',
-));
-$wp_customize->add_control('address', array(
-    'label'     => __('ঠিকানা', 'khoborer-kagoj'),
-    'settings'  => 'address',
-    'section'   => 'npa_header_area',
-    'type'      => 'text'
-));
-
-/**
- * ==========================
- * Phone
- * ==========================
- */
-$wp_customize->add_setting('phone', array(
-    'default'       => '০১৯১৫৩৪৪৪১৮',
-    'transport'     => 'refresh',
-));
-$wp_customize->add_control('phone', array(
-    'label'     => __('ফোন নাম্বার', 'khoborer-kagoj'),
-    'settings'  => 'phone',
-    'section'   => 'npa_header_area',
-    'type'      => 'text'
-));
-
-/**
- * ==========================
- * Email
- * ==========================
- */
-$wp_customize->add_setting('email', array(
-    'default'       => 'faroque.computer@gmail.com',
-    'transport'     => 'refresh',
-));
-$wp_customize->add_control('email', array(
-    'label'     => __('ইমেইল', 'khoborer-kagoj'),
-    'settings'  => 'email',
-    'section'   => 'npa_header_area',
-    'type'      => 'email'
 ));

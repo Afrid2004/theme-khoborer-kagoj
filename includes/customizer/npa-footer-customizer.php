@@ -6,3 +6,4 @@ $wp_customize->add_panel('npa_footer_panel', array(
 ));
 require get_template_directory() . '/includes/customizer/footer/npa-footer-background.php';
 require get_template_directory() . '/includes/customizer/footer/npa-footer-google-map.php';
+require get_template_directory() . '/includes/customizer/footer/npa-address-phone-email.php';
