@@ -339,10 +339,10 @@ while ($education->have_posts()) : $education->the_post();
 
 <!-- video- main box start -->
 <?php
-    $original_id = 35;
+    $original_id = 34;
     $category_id = intval(get_theme_mod("rjs_category_dropdown_{$original_id}"));
     if (empty($category_id)) {
-      $category_id = 35;
+      $category_id = 34;
     }
 
     $category_name = get_cat_name($category_id);
@@ -374,7 +374,6 @@ while ($education->have_posts()) : $education->the_post();
       $videopart = new WP_Query(array(
         'cat' => $category_id,
         'posts_per_page' => 4,
-        'offset'        => 4,
         'order' => 'DESC'
       ));
       while ($videopart->have_posts()):$videopart->the_post();
