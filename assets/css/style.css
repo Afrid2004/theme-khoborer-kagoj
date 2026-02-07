@@ -468,7 +468,45 @@ li.text-danger:nth-child(1) {
     justify-content: center;
     align-items: center;
 }
+.tab-link{
+    transition: all .2s ease-in-out;
+        border-bottom: 2px solid transparent;
+}
 
+.tab-link:hover, .active-tab-link.show{
+    border-bottom: 3px solid red;
+}
+.fade:not(.show) {
+    display: none !important;
+}
+.tab-content{
+    max-height: 238px;
+    overflow-y: auto;
+}
+.loader {
+    width: 17px;
+    height: 17px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid #0000001f;
+    border-right-color: black;
+    animation: l2 .5s infinite linear;
+}
+
+@keyframes l2 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.load-btn {
+    background-color: #FFD563;
+    transition: all .5s ease-in-out;
+}
+
+.load-btn:hover {
+    background-color: #ffc423;
+}
 /* 
 .border-lead {
     border-right: 1px solid #DCDCDC;

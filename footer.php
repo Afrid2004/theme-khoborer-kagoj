@@ -169,6 +169,66 @@
 
 
 
+ <script>
+var activeTabLink = document.querySelectorAll('.active-tab-link');
+activeTabLink.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    activeTabLink.forEach((tab) => {
+      tab.classList.remove('show');
+    })
+    tab.classList.add('show');
+  })
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loadMoreButtons = document.querySelectorAll(".load-btn");
+
+  if (!loadMoreButtons.length) return;
+
+  loadMoreButtons.forEach((btn) => {
+
+    btn.addEventListener("click", function() {
+
+      const page = parseInt(this.dataset.page);
+      const max = parseInt(this.dataset.max);
+      const type = this.dataset.type;
+
+      const wrapper = this.closest(".col-md-10").querySelector(".post-wrapper");
+
+      this.innerHTML =
+        `<div class="d-flex align-items-center justify-content-center gap-2">loading <div class="loader"></div></div>`;
+
+      let formData = new FormData();
+      formData.append("action", "load_more_posts");
+      formData.append("page", page + 1);
+      formData.append("type", type);
+
+      fetch(ajax_object.ajax_url, {
+          method: "POST",
+          body: formData,
+        })
+        .then((res) => res.text())
+        .then((data) => {
+
+          wrapper.insertAdjacentHTML("beforeend", data);
+
+          this.dataset.page = page + 1;
+          this.textContent = "Load More";
+
+          if (page + 1 >= max) {
+            this.style.display = "none";
+          }
+        })
+        .catch((err) => {
+          console.error("Error:", err);
+          this.textContent = "Load More";
+        });
+    });
+
+  });
+});
+ </script>
 
  <?php wp_footer(); ?>
  </body>

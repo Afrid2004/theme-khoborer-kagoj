@@ -20,10 +20,13 @@ if (!empty($categories)) {
 }
 ?>
 
-          <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php echo esc_url($cat_link); ?>">
-            <i class="bi bi-house-door me-3"></i>
-            <?php echo esc_html($cat_name); ?>
-          </a>
+          <div>
+            <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php echo esc_url(home_url()); ?>">
+              <i class="bi bi-house-door me-3"></i>
+            </a>
+            <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php echo esc_url($cat_link); ?>">
+              <?php echo esc_html($cat_name); ?></a>
+          </div>
         </div>
 
       </div>

@@ -19,10 +19,14 @@ if (!empty($categories)) {
     $cat_link = home_url();
 }
 ?>
-          <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php echo esc_url($cat_link); ?>"> <i
-              class="bi bi-house-door me-3"></i>
-            <?php echo esc_html($cat_name); ?>
-          </a>
+          <div>
+            <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php echo esc_url(home_url()); ?>">
+              <i class="bi bi-house-door me-3"></i>
+            </a>
+            <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php echo esc_url($cat_link); ?>">
+              <?php echo esc_html($cat_name); ?></a>
+          </div>
+
         </div>
 
       </div>
@@ -213,17 +217,59 @@ if ( is_category() && $category ) {
 
       <div class="col-md-3">
 
-        <div class="row tab-letest heading">
-          <ul class="nav justify-content-between">
-            <li class="nav-item">
-              <a class="nav-link active text-dark text-bold font-size-22 pt-lg-0" aria-current="page"
-                href="<?php the_permalink(); ?>">সর্বশেষ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark text-bold font-size-22 pt-lg-0" href="<?php the_permalink(); ?>">সর্বাধিক
-                পঠিত</a>
-            </li>
-          </ul>
+        <div class="row mt-md-3 mt-3 tab-letest heading">
+          <!-- Nav tabs -->
+          <div class="nav justify-content-around" id="myTab" role="tablist">
+            <a class="nav-link active-tab-link show tab-link active text-dark text-bold font-size-22 pb-2 mb-4"
+              data-bs-toggle="tab" href="#recent" role="tab">
+              সর্বশেষ
+            </a>
+
+            <a class="nav-link active-tab-link tab-link text-dark text-bold font-size-22 pb-2 mb-4" data-bs-toggle="tab"
+              href="#moreviewed" role="tab">
+              সর্বাধিক পঠিত
+            </a>
+          </div>
+
+          <!-- Tab content -->
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active d-flex flex-column" id="recent" role="tabpanel">
+              <?php 
+                $args = array(
+                  'posts_per_page' => 10,
+                  'orderby'        => 'date',
+                  'order'          => 'DESC',
+                );
+                $counter = 1;
+                $query = new WP_Query($args);
+
+              if ($query->have_posts()):while ($query->have_posts()):$query->the_post();?>
+              <a href="<?php the_permalink(); ?>" class="text-decoration-none text-dark">
+                <h5 class="border-bottom pb-2"><?php echo convert_to_bangla($counter); ?>. <?php echo the_title(); ?>
+                </h5>
+              </a>
+              <?php $counter++; endwhile; endif; ?>
+            </div>
+
+            <div class="tab-pane fade d-flex flex-column" id="moreviewed" role="tabpanel">
+              <?php 
+                $args = array(
+                  'posts_per_page' => 10,
+                  'orderby'        => 'date',
+                  'order'          => 'DESC',
+                );
+                $nextCounter = 1;
+                $query = new WP_Query($args);
+
+              if ($query->have_posts()):while ($query->have_posts()):$query->the_post();?>
+              <a href="<?php the_permalink(); ?>" class="text-decoration-none text-dark">
+                <h5 class="border-bottom pb-2"><?php echo convert_to_bangla($nextCounter); ?>.
+                  <?php echo the_title(); ?></h5>
+              </a>
+              <?php $nextCounter++; endwhile; endif; ?>
+            </div>
+          </div>
+
         </div>
 
         <!-- education-part start -->
@@ -320,12 +366,30 @@ if ( is_category() && $category ) {
 
 <!-- category-item-start -->
 <div class="container-fluid py-3">
-  <div class="container">
+  <div class="container post-wrapper">
     <?php
+
+    $category = get_queried_object();
+
+    if ( is_category() && $category ) {
+        $category_id   = $category->term_id;
+        $category_name = $category->name;
+        $category_link = get_category_link($category_id);
+    } else {
+        return;
+    }
+
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                    if (get_query_var('page')) {
+                         $paged = get_query_var('page');
+
+                    }
+
+
                 $news_and_event = new WP_Query(array(
                     'cat'               => $category_id,
-                    'posts_per_page'    => 6,
-                    'offset'            => 8,
+                    'posts_per_page'    => 2,
+                    // 'offset'            => 8,
                     'order'             => 'DESC'
                 ));
                 while ($news_and_event->have_posts()): $news_and_event->the_post();
@@ -380,6 +444,16 @@ if ( is_category() && $category ) {
                 endwhile;
                 wp_reset_postdata();
             ?>
+
+  </div>
+
+  <div class="text-center mt-2">
+    <?php if ($news_and_event->max_num_pages > 1): ?>
+    <button class="btn px-4 py-2 rounded-0 load-btn" data-page="1" data-type="recent_projects"
+      data-max="<?php echo $news_and_event->max_num_pages; ?>">
+      Load More
+    </button>
+    <?php endif; ?>
 
   </div>
 </div>
