@@ -10,14 +10,16 @@
       <div class="row d-flex align-items-center border-bottom pb-3">
         <div class="col-md-12 px-4 px-sm-3">
           <?php
-$categories = get_the_category();
-if (!empty($categories)) {
-    $cat_name = $categories[0]->name;
-    $cat_link = get_category_link($categories[0]->term_id);
+$category = get_queried_object();
+
+if ( is_category() && $category ) {
+    $cat_name = $category->name;
+    $cat_link = get_category_link($category->term_id);
 } else {
     $cat_name = 'জাতীয়';
     $cat_link = home_url();
 }
+
 ?>
           <div>
             <a class="text-decoration-none text-dark font-size-20 text-bold" href="<?php echo esc_url(home_url()); ?>">

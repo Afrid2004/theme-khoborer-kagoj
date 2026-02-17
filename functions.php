@@ -139,7 +139,7 @@ function ajax_live_search() {
     $args = [
         'post_type' => 'post',
         's' => $query,
-        'posts_per_page' => 5,
+        'posts_per_page' => 20,
     ];
 
     $search = new WP_Query($args);

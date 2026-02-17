@@ -514,7 +514,10 @@ li.text-danger:nth-child(1) {
 .pagination .page-link:not(.page-link.current){
     color: #DC3545;
 }
-
+#live-search-results{
+    max-height: 250px;
+    overflow: auto;
+}
 #live-search-results li {
     display: flex;
     align-items: center;
