@@ -11,7 +11,7 @@
 <body>
   <!-- header-responsive-part -->
   <div class="container-fluid bg-white px-0 d-md-none d-flex align-items-center justify-content-between position-sticky"
-    style="top:0; z-index:2;">
+    style="top:0; z-index:5;">
     <div class="container shadow py-3 pe-4">
       <div class="row d-flex justify-content-between align-items-center">
         <div class="col-7">
@@ -178,11 +178,9 @@
     <div class="container mt-md-3 mt-1 d-none d-md-block">
       <div class="row">
         <div class="col-md-3">
-          <form class="d-flex align-items-center" role="search">
-            <input class="form-control search-btn-height font-size-13 me-1" type="search" placeholder="অনুসন্ধান করুন"
-              aria-label="Search" />
-            <button class="btn" type="submit"><i class="bi fs-6 bi-search"></i></button>
-          </form>
+          <!-- search form -->
+          <?php get_template_part('/includes/get/search-form') ?>
+          <!-- search form -->
           <div class="date-and-time d-flex justify-content-start font-size-12 align-items-center mt-md-3">
             <i class="bi bi-crosshair2"></i>
             <h5 class="font-size-12 ps-2 mt-2 pe-2" style="line-height: 1.3rem;font-size: .9rem;">

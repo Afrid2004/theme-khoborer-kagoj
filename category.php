@@ -2,7 +2,7 @@
     get_header();
 ?>
 
-
+<?php if ( ! is_paged() ) : ?>
 <!-- national-part start -->
 <div class="container">
   <div class="row mt-4">
@@ -148,17 +148,6 @@ if ( is_category() && $category ) {
 
         <!-- three-part start -->
         <div class="container ">
-          <!-- <div
-                            class="row d-flex align-items-center border-bottom pb-3 mt-4 border-bottom mb-3 pb-md-4 pb-3 px-lg-2">
-                            <div class="col-md-7 col-7 px-0">
-                                <a class="text-decoration-none text-dark font-size-20 text-bold"
-                                    href="category.html">রাজনীতি</a>
-                            </div>
-                            <div class="col-md-5 px-0 col-5 d-flex align-items-center justify-content-end">
-                                <a class="text-decoration-none text-dark font-size-17" href="category.html">আারও <i
-                                        class="fa-solid fa-arrow-right ms-1"></i></a>
-                            </div>
-                        </div> -->
           <div class="row">
             <?php
                 $news_and_event = new WP_Query(array(
@@ -191,10 +180,10 @@ if ( is_category() && $category ) {
               </div>
               <div class="news-body d-none d-md-block">
                 <p class="lh-base"><?php 
-                                        $contentText = get_the_content();
-                                        $trimingWords = WP_trim_words($contentText, 15, '...');
-                                        echo $trimingWords;
-                                ?>
+                    $contentText = get_the_content();
+                    $trimingWords = WP_trim_words($contentText, 15, '...');
+                    echo $trimingWords;
+                ?>
                 </p>
               </div>
               <div class="time d-none d-md-block">
@@ -248,7 +237,7 @@ if ( is_category() && $category ) {
                 <h5 class="border-bottom pb-2"><?php echo convert_to_bangla($counter); ?>. <?php echo the_title(); ?>
                 </h5>
               </a>
-              <?php $counter++; endwhile; endif; ?>
+              <?php $counter++; endwhile; wp_reset_postdata(); endif; ?>
             </div>
 
             <div class="tab-pane fade d-flex flex-column" id="moreviewed" role="tabpanel">
@@ -266,7 +255,7 @@ if ( is_category() && $category ) {
                 <h5 class="border-bottom pb-2"><?php echo convert_to_bangla($nextCounter); ?>.
                   <?php echo the_title(); ?></h5>
               </a>
-              <?php $nextCounter++; endwhile; endif; ?>
+              <?php $nextCounter++; endwhile; wp_reset_postdata(); endif; ?>
             </div>
           </div>
 
@@ -363,9 +352,10 @@ if ( is_category() && $category ) {
 </div>
 </div>
 <!-- lead main box end -->
+<?php endif; ?>
 
 <!-- category-item-start -->
-<div class="container-fluid py-3">
+<div class="container-fluid py-3 <?php echo is_paged() ? 'pt-5' : ''; ?>">
   <div class="container post-wrapper">
     <?php
 
@@ -379,44 +369,32 @@ if ( is_category() && $category ) {
         return;
     }
 
-                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    if (get_query_var('page')) {
-                         $paged = get_query_var('page');
-
-                    }
-
-
-                $news_and_event = new WP_Query(array(
-                    'cat'               => $category_id,
-                    'posts_per_page'    => 2,
-                    // 'offset'            => 8,
-                    'order'             => 'DESC'
-                ));
-                while ($news_and_event->have_posts()): $news_and_event->the_post();
-            ?>
-    <div class="row d-flex justify-content-start">
+    if ( have_posts() ) :
+        while ( have_posts() ) : the_post();
+    ?>
+    <div class="row d-flex <?php echo is_paged() ? 'justify-content-center' : 'justify-content-start'; ?>">
       <div class="col-md-8 col-12 border-bottom pb-md-4 pb-2 mb-md-5 mb-3">
-        <div class="heading mb-md-3 mb-2">
-          <h3><a class="text-decoration-none text-dark font-size-24"
-              href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        </div>
+
         <div class="news-image d-flex justify-content-between">
           <div class="row">
             <div class="col-md-8">
+              <div class="heading mb-md-3 mb-2">
+                <h3><a class="text-decoration-none text-dark font-size-24"
+                    href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              </div>
               <div class="news-body">
                 <p><?php 
-                                        $contentText = get_the_content();
-                                        $trimingWords = WP_trim_words($contentText, 15, '...');
-                                        echo $trimingWords;
-                                ?></p>
+                    $contentText = get_the_content();
+                    echo WP_trim_words($contentText, 15, '...');
+                ?></p>
                 <div class="time">
                   <p><?php echo khoborerkagoj_category_with_time_ago($category_id); ?></p>
                 </div>
               </div>
-
             </div>
             <div class="col-md-4 image">
-              <a href="<?php the_permalink(); ?>"><?php
+              <a href="<?php the_permalink(); ?>">
+                <?php
               $thumb_id = get_post_thumbnail_id(get_the_ID());
               $alt_text = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
               if (has_post_thumbnail()) {
@@ -428,41 +406,48 @@ if ( is_category() && $category ) {
                 <img src="<?php echo get_template_directory_uri() . '/images/banner-demo-image-856x460.jpg' ?>"
                   alt="<?php echo $alt_text ? esc_attr($alt_text) : esc_attr(get_the_title()); ?>"
                   class="mb-md-2 mb-1 img-fluid w-100">
-                <?php } ?></a>
-
+                <?php } ?>
+              </a>
             </div>
           </div>
-
-          <div>
-
-          </div>
         </div>
-
       </div>
     </div>
-    <?php
-                endwhile;
-                wp_reset_postdata();
-            ?>
-
+    <?php 
+        endwhile;
+    endif; 
+    ?>
   </div>
 
-  <div class="text-center mt-2">
-    <?php if ($news_and_event->max_num_pages > 1): ?>
-    <button class="btn px-4 py-2 rounded-0 load-btn" data-page="1" data-type="recent_projects"
-      data-max="<?php echo $news_and_event->max_num_pages; ?>">
-      Load More
-    </button>
-    <?php endif; ?>
+  <!-- Bootstrap Pagination -->
+  <?php
 
-  </div>
+  global $wp_query;
+
+  $big = 999999999;
+  $pagination_links = paginate_links(array(
+      'base'      => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+      'format'    => '?paged=%#%',
+      'current'   => max(1, get_query_var('paged')),
+      'total'     => $wp_query->max_num_pages,
+      'type'      => 'array',
+      'prev_text' => '&laquo;',
+      'next_text' => '&raquo;',
+  ));
+
+  if (is_array($pagination_links)):
+  ?>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center mt-4">
+      <?php foreach ($pagination_links as $link): ?>
+      <li class="page-item <?php echo strpos($link, 'current') !== false ? 'active' : ''; ?>">
+        <?php echo str_replace('page-numbers', 'page-link', $link); ?>
+      </li>
+      <?php endforeach; ?>
+    </ul>
+  </nav>
+  <?php endif; ?>
 </div>
 <!-- category-item-end -->
-
-
-
-
-
-
 
 <?php get_footer(); ?>

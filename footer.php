@@ -181,51 +181,42 @@ activeTabLink.forEach((tab) => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const loadMoreButtons = document.querySelectorAll(".load-btn");
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('live-search-input');
+  const resultsBox = document.getElementById('live-search-results');
 
-  if (!loadMoreButtons.length) return;
+  searchInput.addEventListener('keyup', function() {
+    const query = this.value.trim();
+    if (query.length < 2) {
+      resultsBox.style.display = 'none';
+      resultsBox.innerHTML = '';
+      return;
+    }
 
-  loadMoreButtons.forEach((btn) => {
+    fetch('<?php echo admin_url("admin-ajax.php"); ?>?action=live_search&query=' + encodeURIComponent(query))
+      .then(response => response.json())
+      .then(data => {
+        resultsBox.innerHTML = '';
+        if (data.length > 0) {
+          data.forEach(post => {
+            const li = document.createElement('li');
+            li.classList.add('list-group-item', 'list-group-item-action');
+            li.innerHTML = `<a href="${post.url}">${post.title}</a>`;
+            resultsBox.appendChild(li);
+          });
+          resultsBox.style.display = 'block';
+        } else {
+          resultsBox.innerHTML = '<li class="list-group-item">কোনো ফলাফল পাওয়া যায়নি</li>';
+          resultsBox.style.display = 'block';
+        }
+      });
+  });
 
-    btn.addEventListener("click", function() {
-
-      const page = parseInt(this.dataset.page);
-      const max = parseInt(this.dataset.max);
-      const type = this.dataset.type;
-
-      const wrapper = this.closest(".col-md-10").querySelector(".post-wrapper");
-
-      this.innerHTML =
-        `<div class="d-flex align-items-center justify-content-center gap-2">loading <div class="loader"></div></div>`;
-
-      let formData = new FormData();
-      formData.append("action", "load_more_posts");
-      formData.append("page", page + 1);
-      formData.append("type", type);
-
-      fetch(ajax_object.ajax_url, {
-          method: "POST",
-          body: formData,
-        })
-        .then((res) => res.text())
-        .then((data) => {
-
-          wrapper.insertAdjacentHTML("beforeend", data);
-
-          this.dataset.page = page + 1;
-          this.textContent = "Load More";
-
-          if (page + 1 >= max) {
-            this.style.display = "none";
-          }
-        })
-        .catch((err) => {
-          console.error("Error:", err);
-          this.textContent = "Load More";
-        });
-    });
-
+  // Hide results when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!searchInput.contains(e.target) && !resultsBox.contains(e.target)) {
+      resultsBox.style.display = 'none';
+    }
   });
 });
  </script>

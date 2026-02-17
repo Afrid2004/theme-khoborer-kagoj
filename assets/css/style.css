@@ -2,11 +2,8 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-
 
 @font-face {
     font-family: SolaimanLipiNormal;
@@ -14,6 +11,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: SolaimanLipiNormal;
     font-size: 15px;
     line-height: 150%;
@@ -507,6 +506,42 @@ li.text-danger:nth-child(1) {
 .load-btn:hover {
     background-color: #ffc423;
 }
+
+.pagination .page-link.current{
+    background-color: #DC3545 !important;
+    border: 1px solid #DC3545 !important;
+}
+.pagination .page-link:not(.page-link.current){
+    color: #DC3545;
+}
+
+#live-search-results li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#live-search-results li img {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#live-search-results li a {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #000;
+}
+
+#live-search-results li a:hover {
+    color: #DC3545;
+}
+.font-size-15{
+    font-size: 15px !important;
+}
+
 /* 
 .border-lead {
     border-right: 1px solid #DCDCDC;
